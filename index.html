@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9QTMWWT');</script>
+<!-- End Google Tag Manager -->
 <title>IV Therapy in Elizabethtown, KY | ANU Face, Mind, Body</title>
 <meta name="description" content="Physician-led IV therapy in Elizabethtown, Kentucky. Nutrients straight to your bloodstream in one 30 to 45 minute session. Take the 60-second quiz.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -505,6 +513,8 @@ textarea.field__ctrl{height:96px;resize:vertical}
 .form__note{font-size:12px;line-height:1.5;color:var(--ink-50)}
 .form__status{font-size:14px;line-height:1.5;color:var(--espresso);display:none}
 .form__status.is-visible{display:block}
+.form__status.is-error{color:#a8352b}
+.form--success{justify-content:center}
 
 /* ============================================================
    12 · FAQ
@@ -847,6 +857,10 @@ a.footer__link.is-tapped,.footer__social.is-tapped{opacity:1;color:var(--white);
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9QTMWWT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ============================================================
      1 · HERO
@@ -1908,22 +1922,105 @@ const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"
     }));
   }
 
-  /* ---------- form (no network; local confirmation only) ---------- */
+  /* ---------- form (posts to the AEVA contacts endpoint) ---------- */
+  const FORM_ENDPOINT = "https://api.aevadigital.com/api/v1/contacts/add_contact_from_form/";
+  const FORM_ORGANIZATION = "0a165aaa-3f2a-4b68-b475-66cf5c67cc8a";
+  const FORM_ID = "552";
+
   const form = document.getElementById("booking-form");
   const status = document.getElementById("form-status");
-  form.addEventListener("submit", e=>{
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  function setStatus(msg, isError){
+    status.textContent = msg || "";
+    status.classList.toggle("is-visible", !!msg);
+    status.classList.toggle("is-error", !!msg && !!isError);
+    if (msg && !REDUCED) gsap.fromTo(status, {autoAlpha:0, y:8}, {autoAlpha:1, y:0, duration:0.3, ease:"power3.out"});
+  }
+
+  /* gclid / fbclid / ttclid etc, whichever landed on the URL first */
+  function adTracking(){
+    const params = new URLSearchParams(window.location.search);
+    const map = {gclid:"google", wbraid:"google", gbraid:"google", fbclid:"meta", ttclid:"tiktok"};
+    for (const [param, source] of Object.entries(map)){
+      const val = params.get(param);
+      if (val) return {tracking_param: val, ad_source: source};
+    }
+    return {tracking_param: "", ad_source: "other"};
+  }
+
+  form.addEventListener("submit", async e=>{
     e.preventDefault();
+    setStatus("");
+
+    const val = id => (document.getElementById(id).value || "").trim();
+    const first_name = val("f-first");
+    const last_name  = val("f-last");
+    const email      = val("f-email");
+    const phoneRaw   = val("f-phone");
+    const message    = val("f-msg");
+
     const missing = [...form.querySelectorAll("[required]")].filter(f=>!f.value.trim());
     if (missing.length){
-      status.textContent = "Please add your name, phone number and email so the clinic can call you back.";
-      status.classList.add("is-visible");
+      setStatus("Please add your name, phone number and email so the clinic can call you back.", true);
       missing[0].focus();
       if(!REDUCED) gsap.fromTo(missing[0], {x:-4}, {x:0, duration:0.3, ease:"power2.out"});
       return;
     }
-    status.textContent = "Thank you. Your request is ready to send, the clinic will call you back with two or three times that work.";
-    status.classList.add("is-visible");
-    if(!REDUCED) gsap.fromTo(status, {autoAlpha:0, y:8}, {autoAlpha:1, y:0, duration:0.3, ease:"power3.out"});
+
+    if (!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)){
+      setStatus("Please enter a valid email address.", true);
+      document.getElementById("f-email").focus();
+      return;
+    }
+
+    /* accept (270) 000-0000, 270-000-0000, 2700000000 — all become +12700000000 */
+    const digits = phoneRaw.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
+    if (!/^[0-9]{10}$/.test(digits)){
+      setStatus("Please enter a 10-digit US phone number.", true);
+      document.getElementById("f-phone").focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+
+    const fd = new FormData();
+    fd.append("first_name", first_name);
+    fd.append("last_name", last_name);
+    fd.append("phone", `+1${digits}`);
+    fd.append("email", email);
+    fd.append("message", message);
+    fd.append("checkbox", "on");
+    fd.append("organization", FORM_ORGANIZATION);
+    fd.append("form", FORM_ID);
+    fd.append("form_location", window.location.href);
+    const track = adTracking();
+    fd.append("tracking_param", track.tracking_param);
+    fd.append("ad_source", track.ad_source);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {method:"POST", body:fd});
+      if (!res.ok){
+        const txt = await res.text().catch(()=>res.statusText);
+        throw new Error(txt || "Server error");
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event:"form-success"});
+
+      const thankYou = document.createElement("div");
+      thankYou.className = "form form--success";
+      thankYou.setAttribute("role","status");
+      thankYou.innerHTML = '<h2 class="form__title">Thank you.</h2>' +
+        '<p class="form__sub">Your booking request has been received. The clinic will call you back with two or three times that work.</p>';
+      form.parentNode.insertBefore(thankYou, form.nextSibling);
+      form.style.display = "none";
+      if(!REDUCED) gsap.fromTo(thankYou, {autoAlpha:0, y:12}, {autoAlpha:1, y:0, duration:0.45, ease:"power3.out"});
+    } catch (err){
+      console.error(err);
+      setStatus("Submission failed \u2014 please try again.", true);
+      submitBtn.disabled = false;
+    }
   });
 
   /* ---------- prefill from "Choose" buttons ---------- */
