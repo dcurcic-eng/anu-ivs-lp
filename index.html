@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9QTMWWT');</script>
+<!-- End Google Tag Manager -->
+<title>IV Therapy in Elizabethtown, KY | ANU Face, Mind, Body</title>
+<meta name="description" content="Physician-led IV therapy in Elizabethtown, Kentucky. Nutrients straight to your bloodstream in one 30 to 45 minute session. Take the 60-second quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/anu-logo-square.png">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --espresso:#392E26;
+  --espresso-hover:#2A2219;
+  --secondary:#6A5C4C;
+  --secondary-light:#7D6E5D;
+  --accent:#B7A693;
+  --surface-2:#E3D9CE;
+  --surface-muted:#F5F1ED;
+  --white:#fff;
+
+  --ink-90:#392E26E6;
+  --ink-75:#392E26BF;
+  --ink-50:#392E2680;
+  --ink-20:#392E2633;
+  --ink-10:#392E261A;
+
+  --w-75:#FFFFFFBF;
+  --w-85:#FFFFFFD9;
+  --w-60:#FFFFFF99;
+  --w-50:#FFFFFF80;
+  --w-30:#FFFFFF4D;
+  --w-20:#FFFFFF33;
+  --w-15:#FFFFFF26;
+  --w-12:#FFFFFF1F;
+
+  --page-x:64px;
+  --faq-gutter:52px;
+  --container:1312px;
+  /* Section rhythm is screen-relative, not a fixed canvas: 12% of viewport
+     height, floored at 72px and capped at the original 120px desktop value,
+     so a ~1000px-tall desktop viewport renders exactly as it did before. */
+  --sect-y:clamp(72px,13.4vh,120px);
+
+  /* Bento tile scrims, reproduced exactly from the .pen gradient stops.
+     Flip these two to `to top` if the scrim should sit behind the text instead. */
+  --tile-scrim-sm:linear-gradient(5deg,rgba(0,0,0,0) 10%,rgba(0,0,0,.902) 100%);
+  --tile-scrim-lg:linear-gradient(5deg,rgba(0,0,0,0) 20%,rgba(0,0,0,.851) 100%);
+  --shadow-md:0 8px 24px rgba(0,0,0,.12);
+  --shadow-nav:0 8px 24px rgba(0,0,0,.12);
+  --shadow-lg:0 20px 40px rgba(0,0,0,.16);
+  --t-fast:.15s cubic-bezier(.25,.1,.25,1);
+  --t-base:.3s cubic-bezier(.25,.1,.25,1);
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;width:100%;min-height:100%}
+body{
+  font-family:"Poppins",system-ui,sans-serif;
+  font-weight:400;
+  color:var(--espresso);
+  background:var(--white);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img,video,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+input,textarea,select{font:inherit;color:inherit}
+h1,h2,h3,h4,p,figure,blockquote{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* headings sit at 400 — the defining ANU typographic move */
+h1,h2,h3{font-weight:400}
+
+/* ============================================================
+   SHARED PRIMITIVES
+   ============================================================ */
+.section{width:100%;padding:var(--sect-y) var(--page-x)}
+.container{width:100%;max-width:var(--container);margin:0 auto}
+
+.eyebrow{display:flex;align-items:center;gap:8px}
+.eyebrow__marker{width:10px;height:10px;background:var(--espresso);flex:0 0 auto}
+.eyebrow__label{font-size:14px;font-weight:500;letter-spacing:.7px;line-height:1.5;color:var(--ink-75)}
+.eyebrow--light .eyebrow__marker{background:var(--white)}
+.eyebrow--light .eyebrow__label{color:var(--white)}
+
+/* Fluid type: each clamp hits its old fixed value at the width the old
+   breakpoint used, so the desktop reading experience is unchanged while
+   every size in between now scales instead of stepping. */
+.h2{font-size:clamp(30px,4vw,48px);line-height:1.1;color:var(--espresso)}
+.sub{font-size:clamp(16px,1.5vw,18px);line-height:1.5;color:var(--ink-75)}
+
+/* clip-mask wrappers for the signature reveal */
+.clip{overflow:hidden;display:block}
+
+.sect-head{display:flex;gap:48px;justify-content:space-between;align-items:flex-end}
+.sect-head__left{display:flex;flex-direction:column;gap:18px}
+.sect-head__right{width:420px;flex:0 0 auto}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border-radius:8px;font-size:16px;font-weight:500;line-height:1;
+  padding:16px 32px;border:1px solid transparent;
+  transition:background-color var(--t-base),color var(--t-base),border-color var(--t-base),box-shadow var(--t-base);
+  will-change:transform;
+}
+.btn--dark{background:var(--espresso);color:var(--white);border-color:var(--espresso)}
+.btn--white{background:var(--white);color:var(--espresso);border-color:var(--white)}
+.btn--outline-light{border-color:var(--w-50);color:var(--white)}
+.btn--outline-dark{border-color:var(--espresso);color:var(--espresso);background:transparent}
+.btn--block{width:100%}
+.btn--sm{font-size:14px;padding:10px 16px}
+.btn--md{padding:14px 24px}
+
+/* ============================================================
+   1 · HERO — always exactly one screen tall.
+   `svh` (small viewport height) is deliberate over `vh`/`dvh`: on mobile it
+   measures the viewport with the browser chrome *visible*, so the hero is
+   never taller than what you can see and never resizes mid-scroll the way
+   `dvh` does. Everything inside is sized against vh as well, so the hero
+   composes itself to fit rather than overflowing a short screen.
+   ============================================================ */
+.hero{position:relative;width:100%;height:100vh;height:100svh;overflow:hidden;background:var(--espresso)}
+.hero__media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero__scrim{position:absolute;inset:0;background:linear-gradient(5deg,rgba(0,0,0,.851) 7%,rgba(0,0,0,0) 92%)}
+.hero__inner{
+  position:relative;height:100%;
+  max-width:calc(var(--container) + var(--page-x)*2);margin:0 auto;
+  padding:clamp(14px,3.6vh,32px) var(--page-x) clamp(28px,6.3vh,56px);
+  display:flex;flex-direction:column;justify-content:space-between;gap:20px;
+}
+
+/* nav */
+.nav{
+  width:100%;min-height:68px;background:var(--white);border-radius:16px;
+  padding:0 24px;display:flex;align-items:center;justify-content:space-between;
+  box-shadow:var(--shadow-nav);
+}
+.nav__logo{width:108px;height:30px;flex:0 0 auto}
+.nav__logo img{width:100%;height:100%;object-fit:contain}
+.nav__links{display:flex;align-items:center;gap:4px}
+.nav__link{
+  white-space:nowrap;padding:8px 14px;border-radius:8px;font-size:15px;font-weight:500;
+  letter-spacing:.15px;line-height:1.4;color:var(--espresso);
+  transition:background-color var(--t-fast),color var(--t-fast);
+}
+.nav__right{display:flex;align-items:center;gap:20px}
+.nav__phone{white-space:nowrap;font-size:15px;font-weight:500;line-height:1.4;color:var(--espresso);transition:color var(--t-fast)}
+.nav__cta{
+  white-space:nowrap;background:var(--espresso);color:var(--white);border-radius:10px;padding:10px 22px;
+  font-size:15px;font-weight:600;line-height:1.5;display:inline-flex;
+  transition:background-color var(--t-base);
+}
+.nav__mobile{display:none}
+.nav__mobile-cta{
+  display:none;margin-top:8px;background:var(--espresso);color:var(--white);border-radius:10px;
+  padding:14px 22px;font-size:16px;font-weight:600;line-height:1.4;text-align:center;
+}
+.nav__burger{display:none;width:44px;height:44px;align-items:center;justify-content:center;border-radius:10px}
+.nav__burger span{display:block;width:20px;height:1.5px;background:var(--espresso);position:relative}
+.nav__burger span::before,.nav__burger span::after{content:"";position:absolute;left:0;width:20px;height:1.5px;background:var(--espresso);transition:transform var(--t-base)}
+.nav__burger span::before{top:-6px}
+.nav__burger span::after{top:6px}
+
+.hero__bottom{width:100%;display:flex;flex-direction:column;gap:clamp(20px,4.9vh,44px)}
+.hero__copy{width:860px;max-width:100%;display:flex;flex-direction:column;gap:clamp(15px,3.15vh,28px)}
+.rating-chip{
+  align-self:flex-start;display:inline-flex;align-items:center;gap:10px;
+  background:var(--w-12);border:1px solid var(--w-30);border-radius:8px;padding:8px 14px;
+}
+.rating-chip__stars{font-size:13px;letter-spacing:2px;color:var(--white)}
+.rating-chip__src{font-size:12px;font-weight:500;letter-spacing:1.4px;color:var(--w-85)}
+/* the headline is capped by BOTH axes — width keeps it from outgrowing the
+   column, height keeps a short screen from being swallowed by one word */
+.hero__headline{font-size:clamp(32px,min(5.83vw,8.75vh),70px);line-height:1.1;color:var(--white)}
+.hero__subgroup{width:640px;max-width:100%;display:flex;flex-direction:column;gap:14px}
+.hero__intro{font-size:clamp(15px,1.5vw,18px);line-height:1.5;color:var(--w-85)}
+.hero__price{font-size:clamp(13px,1.17vw,14px);line-height:1.5;color:var(--w-60)}
+.hero__ctas{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+
+.datastrip{width:100%;display:flex}
+.datastrip__cell{
+  flex:1 1 0;min-width:0;border-top:1px solid var(--w-30);
+  display:flex;flex-direction:column;gap:10px;padding:18px 24px 0 0;
+}
+.datastrip__label{font-size:12px;font-weight:500;letter-spacing:.6px;line-height:1.5;color:var(--w-60)}
+.datastrip__value{font-size:20px;line-height:1.2;color:var(--white)}
+
+/* ============================================================
+   2 · TRUST STRIP
+   ============================================================ */
+.trust{
+  width:100%;background:var(--white);
+  border-top:1px solid var(--ink-10);border-bottom:1px solid var(--ink-10);
+  padding:36px var(--page-x);display:flex;justify-content:center;
+}
+.trust__row{width:100%;max-width:var(--container);display:flex;align-items:center}
+.trust__item{flex:1 1 0;min-width:0;padding:0 24px;font-size:14px;line-height:1.5;color:var(--ink-75);border-left:1px solid var(--ink-10)}
+.trust__item:first-child{padding:0 24px 0 0;border-left:0}
+
+/* ============================================================
+   3 · QUIZ
+   ============================================================ */
+.quiz{background:var(--surface-2);display:flex;flex-direction:column;align-items:center;gap:40px}
+.quiz__head{width:960px;max-width:100%;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.quiz__head .h2,.quiz__head .sub{text-align:center}
+.quiz__panel{
+  width:960px;max-width:100%;background:var(--white);border:1px solid var(--ink-10);
+  border-radius:24px;display:flex;gap:48px;padding:56px;
+}
+.rail{width:200px;flex:0 0 auto;display:flex;flex-direction:column}
+.rail__label{font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+.rail__step{
+  width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;
+  border-bottom:1px solid var(--ink-10);
+}
+.rail__step:last-child{border-bottom:0}
+.rail__num{font-size:14px;font-weight:500;letter-spacing:.6px;color:var(--ink-50);transition:color var(--t-base)}
+.rail__name{flex:1 1 auto;font-size:16px;line-height:1.4;color:var(--ink-50);transition:color var(--t-base)}
+.rail__check{font-size:13px;color:var(--ink-50);opacity:0;transition:opacity var(--t-fast)}
+.rail__step.is-done .rail__name{color:var(--ink-75)}
+.rail__step.is-done .rail__check{opacity:1}
+.rail__step.is-active .rail__num{color:var(--espresso)}
+.rail__step.is-active .rail__name{color:var(--espresso);font-weight:500}
+
+.qpanel{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
+.qstage{display:flex;flex-direction:column;gap:24px}
+.qmeta{display:flex;flex-direction:column;gap:14px}
+.qmeta__label{font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+.qtrack{width:100%;height:4px;background:var(--ink-10);border-radius:4px;overflow:hidden}
+.qtrack__fill{height:100%;width:25%;background:var(--espresso);border-radius:4px;transition:width .5s cubic-bezier(.16,1,.3,1)}
+.qtext{font-size:clamp(19px,2vw,24px);line-height:1.3;color:var(--espresso)}
+.qanswers{display:flex;flex-direction:column;gap:16px}
+.qrow{display:flex;gap:16px}
+.qopt{
+  flex:1 1 0;min-width:0;display:flex;align-items:center;gap:10px;text-align:left;
+  background:var(--surface-muted);border:1px solid var(--ink-10);border-radius:16px;padding:20px;
+  transition:background-color var(--t-base),border-color var(--t-base),color var(--t-base);
+}
+.qopt__marker{width:8px;height:8px;flex:0 0 auto;background:var(--ink-20);transition:background-color var(--t-base)}
+.qopt__label{flex:1 1 auto;font-size:16px;line-height:1.3;color:var(--espresso);transition:color var(--t-base)}
+.qopt.is-selected{background:var(--espresso);border-color:var(--espresso)}
+.qopt.is-selected .qopt__marker{background:var(--white)}
+.qopt.is-selected .qopt__label{color:var(--white)}
+.qcta{width:100%;padding:18px 32px}
+.qcta.is-waiting{opacity:1}
+.qnote{font-size:13px;line-height:1.5;color:var(--ink-50)}
+.qback{align-self:flex-start;font-size:14px;font-weight:500;color:var(--ink-50);padding:4px 0;transition:color var(--t-fast)}
+
+/* quiz result */
+.qresult{display:none;flex-direction:column;gap:24px}
+.qresult.is-visible{display:flex}
+.qstage.is-hidden{display:none}
+.qresult__kicker{font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+.qresult__name{font-size:clamp(27px,3.33vw,40px);line-height:1.1;color:var(--espresso)}
+.qresult__body{font-size:16px;line-height:1.625;color:var(--ink-75)}
+.qresult__facts{display:flex;flex-direction:column;border-top:1px solid var(--ink-10)}
+.qresult__fact{display:flex;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid var(--ink-10)}
+.qresult__key{width:130px;flex:0 0 auto;font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+.qresult__val{flex:1 1 auto;font-size:16px;line-height:1.5;color:var(--espresso)}
+.qresult__actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ============================================================
+   4 · HOW IT WORKS
+   ============================================================ */
+.how{background:var(--surface-2);display:flex;flex-direction:column;align-items:center}
+.how__eyebrow{margin-bottom:26px}
+.how__heading{width:960px;max-width:100%;font-size:clamp(30px,4vw,48px);line-height:1.1;text-align:center;color:var(--espresso)}
+.how__sub{width:640px;max-width:100%;margin-top:18px;font-size:clamp(16px,1.5vw,18px);line-height:1.5;text-align:center;color:var(--ink-75)}
+.timeline{width:960px;max-width:100%;margin-top:clamp(44px,8.5vh,76px);display:flex;flex-direction:column}
+.tstep{width:100%;height:clamp(232px,29.4vh,264px);display:flex}
+.tstep__cell{width:420px;flex:0 0 auto;height:100%;display:flex;flex-direction:column;padding-top:44px}
+.tstep__rule{width:120px;flex:0 0 auto;height:100%;display:flex;flex-direction:column;align-items:center;gap:12px}
+.rule-line{width:1px;background:var(--ink-20);flex:0 0 auto}
+.rule-line--top{height:24px}
+.rule-line--bottom{flex:1 1 auto}
+.rule-line--short{height:24px;flex:0 0 auto}
+.tstep__num{font-size:clamp(30px,4vw,48px);line-height:1.1;color:var(--ink-50)}
+.tstep__num-m{display:none}
+.tstep__title{font-size:clamp(23px,2.67vw,32px);line-height:1.1;color:var(--espresso)}
+.tstep__body{margin-top:14px;font-size:16px;line-height:1.625;color:var(--ink-75)}
+.tstep--right{text-align:right}
+.tstep__img{width:100%;height:100%;border-radius:24px;overflow:hidden;background:var(--surface-muted)}
+.tstep__img img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.25,.1,.25,1)}
+.tstep__cell--media{padding-top:44px}
+
+.how__data{
+  width:960px;max-width:100%;margin-top:clamp(48px,8.9vh,80px);min-height:clamp(88px,12.1vh,108px);display:flex;
+  border-top:1px solid var(--ink-20);border-bottom:1px solid var(--ink-20);
+}
+.how__data-cell{width:240px;flex:1 1 0;display:flex;flex-direction:column;align-items:center;gap:8px;padding:24px 12px}
+.how__data-label{font-size:12px;font-weight:500;letter-spacing:.6px;line-height:1.5;color:var(--ink-50)}
+.how__data-value{font-size:20px;line-height:1.5;color:var(--espresso)}
+
+/* ============================================================
+   5 · DRIP MENU TABLE
+   ============================================================ */
+.menu{background:var(--white);padding-top:clamp(64px,11.6vh,104px);padding-bottom:clamp(64px,11.6vh,104px)}
+.menu__container{display:flex;flex-direction:column;gap:48px}
+.menu__head{display:flex;gap:80px;align-items:flex-end}
+.menu__head-left{flex:1 1 auto;display:flex;flex-direction:column;gap:24px}
+.menu__head-right{width:400px;flex:0 0 auto;font-size:16px;line-height:1.625;color:var(--ink-75)}
+.ctable{width:100%;border:1px solid var(--ink-10);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.ctable__row{width:100%;display:flex;background:var(--white);border-bottom:1px solid var(--ink-10)}
+.ctable__row--alt{background:var(--surface-muted)}
+.ctable__row--head{background:var(--espresso);border-bottom:0}
+.ctable__row--last{border-bottom:0}
+.ctable__cell{flex:1 1 0;min-width:0;padding:18px 20px;display:flex;flex-direction:column}
+.ctable__cell--label{width:232px;flex:0 0 232px}
+.ctable__lab{font-size:12px;font-weight:500;letter-spacing:.6px;line-height:1.5;color:var(--ink-50)}
+.ctable__name{font-size:17px;font-weight:500;line-height:1.35;color:var(--white)}
+.ctable__txt{font-size:15px;line-height:1.5;color:var(--ink-75)}
+.ctable__btn{align-self:stretch}
+
+/* ============================================================
+   6 · BOOSTERS
+   ============================================================ */
+.boosters{background:var(--surface-muted)}
+.boosters__container{display:flex;flex-direction:column;gap:40px}
+.boosters__grid{display:flex;flex-direction:column;gap:24px}
+.boosters__row{display:flex;gap:24px}
+.bcard{
+  flex:1 1 0;min-width:0;background:var(--white);border:1px solid var(--ink-10);
+  border-radius:24px;display:flex;flex-direction:column;gap:12px;padding:32px;
+  transition:box-shadow var(--t-base),border-color var(--t-base);
+}
+.bcard__icon{width:20px;height:20px;color:var(--espresso)}
+.bcard__icon svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.bcard__name{font-size:16px;font-weight:500;line-height:1.4;color:var(--espresso)}
+.bcard__benefit{font-size:14px;line-height:1.5;color:var(--ink-50)}
+
+/* ============================================================
+   7 · INDICATIONS BENTO
+   ============================================================ */
+.bento{background:var(--white)}
+.bento__container{display:flex;flex-direction:column;gap:24px}
+.bento__head{padding-bottom:24px}
+.bento__row{display:flex;gap:24px}
+.bento__row--a{height:clamp(280px,37.9vh,340px)}
+.bento__row--b{height:clamp(252px,33.4vh,300px)}
+.tile{
+  position:relative;height:100%;border-radius:24px;overflow:hidden;background:var(--espresso);
+  display:flex;flex-direction:column;justify-content:flex-end;
+}
+.tile__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.25,.1,.25,1)}
+.tile__scrim{
+  position:relative;width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;
+  background:var(--tile-scrim-sm);
+  gap:10px;padding:32px;
+}
+.tile__title{font-size:20px;line-height:1.25;color:var(--white)}
+.tile__body{font-size:15px;line-height:1.55;color:var(--w-85)}
+.tile--lg{width:640px;flex:0 0 auto}
+.tile--lg .tile__scrim{background:var(--tile-scrim-lg);gap:12px;padding:40px}
+.tile--lg .tile__title{font-size:clamp(23px,2.67vw,32px);line-height:1.1}
+.tile--lg .tile__body{font-size:16px;line-height:1.5;color:var(--w-75)}
+.tile--w324{width:324px;flex:0 0 auto}
+.tile--w420{width:420px;flex:0 0 auto}
+.tile--w380{width:380px;flex:0 0 auto}
+.tile--fill{flex:1 1 0;min-width:0}
+
+/* ============================================================
+   8 · SOCIAL PROOF
+   ============================================================ */
+.social{position:relative;width:100%;overflow:hidden;background:var(--espresso)}
+.social__img{position:absolute;left:0;top:-80px;width:100%;height:calc(100% + 160px);object-fit:cover}
+.social__scrim{
+  position:relative;width:100%;
+  background:linear-gradient(45deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.651) 50%,rgba(0,0,0,.851) 100%);
+  padding:clamp(80px,15.6vh,140px) var(--page-x);
+}
+.social__inner{max-width:var(--container);margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,8vh,72px)}
+.social__head{display:flex;gap:80px;justify-content:space-between;align-items:flex-end}
+.social__head-left{width:760px;max-width:100%;display:flex;flex-direction:column;gap:30px}
+.social__h2{font-size:clamp(30px,4.17vw,50px);line-height:1.1;color:var(--white)}
+.rating-badge{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:10px;
+  background:var(--w-12);border:1px solid var(--w-30);border-radius:8px;padding:10px 16px;
+}
+.rating-badge__stars{font-size:14px;letter-spacing:2px;color:var(--white)}
+.rating-badge__src{font-size:12px;font-weight:500;letter-spacing:1.4px;color:var(--w-85)}
+.tst-row{display:flex;gap:40px}
+.tst{flex:1 1 0;min-width:0;border-top:1px solid var(--w-30);display:flex;flex-direction:column;gap:22px;padding-top:28px}
+.tst__stars{font-size:13px;letter-spacing:2px;color:var(--w-75)}
+.tst__quote{font-size:18px;line-height:1.5;color:var(--white)}
+.tst__attr{margin-top:auto;font-size:14px;line-height:1.5;color:var(--w-60)}
+
+/* ============================================================
+   9 · ABOUT AMY
+   ============================================================ */
+.about{width:100%;min-height:clamp(520px,71.2vh,640px);display:flex;overflow:hidden}
+.about__photo{width:43%;flex:0 0 43%;align-self:stretch}
+
+/* scroll-linked parallax-zoom frame: clips an oversized image whose only
+   animated property is transform, so the work stays on the GPU compositor.
+   Runs on touch too — one transform write per frame is cheap, and the
+   origin/object-position sit high in the frame so the team's faces stay in
+   shot no matter how far the image is scaled or how wide the band gets. */
+.px-holder{position:relative;overflow:hidden}
+.px-holder .fill-image{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  will-change:transform;transform:translate3d(0,0,0) scale3d(1.35,1.35,1);
+  transform-origin:center center;backface-visibility:hidden;
+}
+@media (prefers-reduced-motion:reduce){
+  .px-holder .fill-image{transform:translate3d(0,0,0) scale3d(1,1,1)!important;will-change:auto}
+}
+/* stacked layout: the band goes wide and shallow, so both the cover crop and
+   the zoom origin move up to keep faces above the cut. Gentler zoom too. */
+@media (max-width:1199px){
+  .about__photo .fill-image{
+    object-position:center 12%;transform-origin:center 12%;
+    transform:translate3d(0,0,0) scale3d(1.18,1.18,1);
+  }
+}
+.about__copy{
+  flex:1 1 auto;min-width:0;align-self:stretch;background:var(--espresso);
+  display:flex;flex-direction:column;justify-content:center;gap:clamp(20px,3.15vh,28px);
+  padding:clamp(32px,5vh,56px) clamp(40px,6.2vw,88px);
+}
+.about__h2{font-size:clamp(27px,3.33vw,40px);line-height:1.1;color:var(--white)}
+.about__body{font-size:16px;line-height:1.625;color:var(--w-75)}
+.creds{display:flex;flex-direction:column}
+.cred{display:flex;gap:24px;align-items:center;padding:14px 0;border-top:1px solid var(--w-20)}
+.cred__key{width:110px;flex:0 0 auto;font-size:12px;font-weight:500;letter-spacing:.6px;line-height:1.5;color:var(--w-60)}
+.cred__val{flex:1 1 auto;font-size:16px;line-height:1.5;color:var(--white)}
+.about__cta{align-self:flex-start}
+
+/* ============================================================
+   10 · MEMBERSHIP
+   ============================================================ */
+.member{background:var(--white)}
+.member__container{display:flex;flex-direction:column;gap:40px}
+.tiers{display:flex;gap:24px;align-items:center}
+.tier{
+  flex:1 1 0;min-width:0;min-height:clamp(360px,46.7vh,420px);background:var(--surface-muted);
+  border:1px solid var(--ink-10);border-radius:24px;
+  display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:40px;
+  transition:box-shadow var(--t-base),border-color var(--t-base);
+}
+.tier--feature{min-height:clamp(410px,54.3vh,488px);background:var(--espresso);border-color:var(--espresso)}
+.tier__body{display:flex;flex-direction:column;gap:14px}
+.tier__tag{align-self:flex-start;background:var(--w-15);border-radius:4px;padding:6px 12px;font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--white)}
+.tier__name{font-size:clamp(20px,2vw,24px);font-weight:500;line-height:1.25;color:var(--espresso)}
+.tier__desc{font-size:15px;line-height:1.55;color:var(--ink-75)}
+.tier__list{display:flex;flex-direction:column;gap:12px;padding-top:18px;border-top:1px solid var(--ink-10)}
+.tier__item{display:flex;gap:12px;align-items:center}
+.tier__bullet{width:6px;height:6px;flex:0 0 auto;background:var(--accent)}
+.tier__label{flex:1 1 auto;font-size:15px;line-height:1.5;color:var(--espresso)}
+.tier--feature .tier__name{color:var(--white)}
+.tier--feature .tier__desc{color:var(--w-75)}
+.tier--feature .tier__list{border-top-color:var(--w-20)}
+.tier--feature .tier__bullet{background:var(--white)}
+.tier--feature .tier__label{color:var(--w-85)}
+.member__note{font-size:14px;line-height:1.5;text-align:center;color:var(--ink-50)}
+
+/* ============================================================
+   11 · CLINIC INFO & CONTACT
+   ============================================================ */
+.contact{background:var(--surface-muted)}
+.contact__container{display:flex;gap:24px;align-items:flex-start}
+.clinic{width:532px;flex:0 0 auto;display:flex;flex-direction:column;gap:28px}
+.clinic__h2{font-size:clamp(27px,3.33vw,40px);line-height:1.1;color:var(--espresso)}
+.info-list{display:flex;flex-direction:column}
+.info{display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid var(--ink-10)}
+.info__label{font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+.info__value{font-size:16px;line-height:1.5;color:var(--espresso)}
+a.info__value{transition:color var(--t-fast)}
+
+.map{position:relative;width:100%;height:clamp(230px,35.6vh,320px);background:var(--surface-2);border-radius:24px;overflow:hidden}
+.map__frame{display:block;width:100%;height:100%;border:0}
+
+.form{
+  flex:1 1 auto;min-width:0;background:var(--white);border:1px solid var(--ink-10);
+  border-radius:24px;display:flex;flex-direction:column;gap:20px;padding:48px;
+}
+.form__title{font-size:clamp(20px,2vw,24px);font-weight:500;line-height:1.25;color:var(--espresso)}
+.form__sub{font-size:15px;line-height:1.55;color:var(--ink-75)}
+.form__row{display:flex;gap:16px}
+.field{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:8px}
+.field__label{font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+.field__ctrl{
+  width:100%;background:var(--surface-muted);border:1px solid var(--ink-10);border-radius:8px;
+  padding:14px 16px;font-size:15px;line-height:1.5;color:var(--espresso);
+  transition:border-color var(--t-base),background-color var(--t-base);
+  -webkit-appearance:none;appearance:none;
+}
+.field__ctrl::placeholder{color:var(--ink-50)}
+.field__ctrl:focus{outline:none;border-color:var(--espresso);background:var(--white)}
+textarea.field__ctrl{height:96px;resize:vertical}
+.form__note{font-size:12px;line-height:1.5;color:var(--ink-50)}
+.form__status{font-size:14px;line-height:1.5;color:var(--espresso);display:none}
+.form__status.is-visible{display:block}
+.form__status.is-error{color:#a8352b}
+.form--success{justify-content:center}
+
+/* ============================================================
+   12 · FAQ
+   ============================================================ */
+.faq{background:var(--white)}
+.faq__container{display:flex;flex-direction:column;gap:48px}
+.faq__head-right{width:380px;flex:0 0 auto}
+.faq__list{display:flex;flex-direction:column;border-bottom:1px solid var(--ink-10)}
+.faq__item{width:100%;border-top:1px solid var(--ink-10);display:flex;flex-direction:column;padding:36px 0}
+.faq__q{width:100%;display:flex;gap:0;align-items:baseline;text-align:left}
+.faq__num{
+  width:var(--faq-gutter);flex:0 0 var(--faq-gutter);
+  font-size:14px;font-weight:500;letter-spacing:.6px;line-height:1.6;
+  color:var(--ink-50);transition:color var(--t-base);
+}
+.faq__question{
+  flex:1 1 auto;padding-right:32px;
+  font-size:clamp(18px,2vw,24px);font-weight:500;line-height:1.35;color:var(--espresso);
+  transition:color var(--t-fast);
+}
+.faq__chev{
+  width:20px;height:20px;flex:0 0 auto;align-self:center;
+  color:var(--ink-50);transition:color var(--t-base);
+}
+.faq__chev svg{
+  width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.75;
+  stroke-linecap:round;stroke-linejoin:round;
+  transition:transform var(--t-base);
+}
+.faq__item.is-open .faq__chev svg{transform:rotate(180deg)}
+.faq__item.is-open .faq__num,
+.faq__item.is-open .faq__chev{color:var(--espresso)}
+.faq__a{overflow:hidden;height:0;opacity:0}
+.faq__a-inner{padding:20px var(--faq-gutter) 0}
+.faq__answer{max-width:68ch;font-size:16px;line-height:1.625;color:var(--ink-75)}
+
+/* ============================================================
+   13 · FOOTER
+   ============================================================ */
+.footer{width:100%;background:var(--espresso)}
+.footer__main{width:100%;padding:clamp(44px,7.2vh,64px) var(--page-x) clamp(40px,6.3vh,56px);display:flex;justify-content:center}
+.footer__cols{width:100%;max-width:var(--container);display:flex;gap:24px}
+.footer__brand{width:380px;flex:0 0 auto;display:flex;flex-direction:column;gap:20px}
+.footer__logo{width:144px;height:40px}
+.footer__logo img{width:100%;height:100%;object-fit:contain;transition:opacity var(--t-fast)}
+.footer__tagline{font-size:14px;line-height:1.7;color:var(--w-75)}
+.footer__cta{align-self:flex-start;background:var(--white);color:var(--espresso);border-radius:8px;padding:12px 24px;font-size:15px;font-weight:600;line-height:1.5;display:inline-flex;transition:background-color var(--t-base)}
+.footer__col{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px}
+.footer__col--follow{flex:1 1 0;width:auto}
+.footer__col-title{font-size:18px;font-weight:600;letter-spacing:.36px;color:var(--white)}
+.footer__links{display:flex;flex-direction:column;gap:12px}
+.footer__link{font-size:14px;line-height:1.6;color:var(--w-85);opacity:.88;transition:opacity var(--t-fast),transform var(--t-fast),color var(--t-fast)}
+.footer__social{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--w-85);opacity:.88;transition:opacity var(--t-fast),transform var(--t-fast),color var(--t-fast)}
+.footer__social svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.footer__bottom{width:100%;padding:24px var(--page-x);border-top:1px solid var(--w-20)}
+.footer__bottom-inner{
+  max-width:var(--container);margin:0 auto;display:flex;align-items:center;
+  justify-content:center;
+}
+.footer__copy{font-size:14px;letter-spacing:.28px;color:var(--w-60)}
+
+/* ============================================================
+   MOTION FROM-STATES  (companion CSS to the GSAP layer)
+   ============================================================ */
+[data-hero-media]{opacity:0;transform:scale(1.05)}
+[data-hero-overlay]{opacity:0}
+[data-hero-nav]{translate:0 -120%}
+[data-hero-title-wrap],[data-hero-info-wrap]{overflow:hidden}
+[data-hero-title],[data-hero-info]{transform:translateY(110%)}
+[data-hero-bottom]{opacity:0;transform:translateY(30px)}
+
+[data-animate]{opacity:0}
+[data-animate="fade-up"]{transform:translateY(40px)}
+[data-animate="fade-down"]{transform:translateY(-40px)}
+[data-animate="slide-left"]{transform:translateX(60px)}
+[data-animate="slide-right"]{transform:translateX(-60px)}
+[data-animate="scale-up"]{transform:scale(.9)}
+[data-animate="stagger"]{opacity:1}
+[data-animate="stagger"]>*{opacity:0;transform:translateY(30px)}
+[data-animate].is-animated,[data-animate="stagger"].is-animated>*{opacity:1;transform:none}
+
+[data-card-stagger]{--card-duration:.5s;--card-ease:cubic-bezier(.16,1,.3,1)}
+[data-card-item]{opacity:0;transform:translateY(30px);
+  transition:opacity var(--card-duration) var(--card-ease),transform var(--card-duration) var(--card-ease)}
+[data-card-item].card-visible{opacity:1;transform:translateY(0)}
+
+/* ============================================================
+   POINTER — hover is for real pointers only.
+   Every hover state on the page lives in this one block, gated on a device
+   that can actually hover. Touch devices never enter it, so nothing gets
+   stuck in a hover state after a tap.
+   ============================================================ */
+@media (hover:hover) and (pointer:fine){
+  .nav__link:hover{background:rgba(183,166,147,.18)}
+  .nav__phone:hover{color:var(--secondary)}
+  .nav__cta:hover{background:var(--secondary)}
+  .qopt:hover{border-color:var(--ink-50)}
+  .qback:hover{color:var(--espresso)}
+  .tstep__img:hover img{transform:scale(1.05)}
+  .ctable__btn:hover{background:var(--espresso);color:var(--white)}
+  .tile:hover .tile__img{transform:scale(1.05)}
+  a.info__value:hover{color:var(--secondary)}
+  .faq__q:hover .faq__question{color:var(--secondary)}
+  .footer__logo:hover img{opacity:.8}
+  .footer__cta:hover{background:var(--surface-2)}
+  a.footer__link:hover{opacity:1;color:var(--white);transform:translateX(4px)}
+  .footer__social:hover{opacity:1;color:var(--white);transform:translateX(4px)}
+}
+
+/* ============================================================
+   TOUCH — the same visual vocabulary, driven by tap.
+   `.is-tapped` is added by the tap layer in the script: a short press state
+   for controls, and a toggled state for the image zooms so a tap holds the
+   effect long enough to read instead of flickering past.
+   ============================================================ */
+@media (hover:none),(pointer:coarse){
+  a,button,.qopt,.tile,.bcard,.tier,.faq__q,.tstep__img{-webkit-tap-highlight-color:transparent}
+  .btn,button,a,.qopt,.faq__q{touch-action:manipulation}
+}
+.nav__link.is-tapped{background:rgba(183,166,147,.18)}
+.nav__phone.is-tapped,a.info__value.is-tapped,.qback.is-tapped{color:var(--secondary)}
+.nav__cta.is-tapped{background:var(--secondary)}
+.qopt.is-tapped{border-color:var(--ink-50)}
+.tstep__img.is-tapped img,.tile.is-tapped .tile__img{transform:scale(1.05)}
+.ctable__btn.is-tapped{background:var(--espresso);color:var(--white)}
+.faq__q.is-tapped .faq__question{color:var(--secondary)}
+.footer__logo.is-tapped img{opacity:.8}
+.footer__cta.is-tapped{background:var(--surface-2)}
+a.footer__link.is-tapped,.footer__social.is-tapped{opacity:1;color:var(--white);transform:translateX(4px)}
+.rating-chip.is-tapped,.rating-badge.is-tapped{background:var(--w-20);border-color:var(--w-50)}
+
+/* ============================================================
+   RESPONSIVE
+   Bands are sized in viewport height with px guard-rails, so each one keeps
+   its proportion of the screen instead of holding a fixed pixel canvas.
+   Every clamp maxes out at the value the desktop build already used, which
+   is what keeps the ≥1440px view identical to before.
+   ============================================================ */
+@media (max-width:1439px){
+  :root{--page-x:40px}
+  .tile--lg{width:44%}
+  .tile--w324,.tile--w420,.tile--w380{width:26%}
+  .ctable__cell--label{flex:0 0 200px;width:200px}
+}
+
+/* ---------- ≤1199 · small laptop and landscape tablet ---------- */
+@media (max-width:1199px){
+  :root{--page-x:32px;--sect-y:clamp(64px,10.7vh,96px)}
+  .sect-head{flex-direction:column;align-items:flex-start;gap:24px}
+  .sect-head__right,.faq__head-right,.menu__head-right{width:100%}
+  .menu__head{flex-direction:column;align-items:flex-start;gap:28px}
+  .social__head{flex-direction:column;align-items:flex-start;gap:28px}
+  .social__head-left{width:100%}
+  .social__scrim{padding:clamp(72px,11.6vh,104px) var(--page-x)}
+  .quiz__panel{padding:40px;gap:32px}
+  .rail{width:170px}
+  .about{min-height:0;flex-direction:column}
+  .about__photo{width:100%;flex:0 0 auto;height:clamp(300px,46.7vh,420px)}
+  .about__copy{padding:clamp(48px,7.1vh,64px) var(--page-x)}
+  .contact__container{flex-direction:column}
+  .clinic{width:100%}
+  .form{width:100%;padding:36px}
+  .timeline,.how__data,.how__heading,.how__sub,.quiz__head,.quiz__panel{width:100%}
+  .tstep{height:auto;gap:0}
+  .tstep__cell{width:auto;flex:1 1 0;min-width:0}
+  /* a definite card height, not a minimum: step 3's photo is portrait, and
+     with an open-ended card it grew to 1.5x the width instead of matching
+     the two landscape cards above it */
+  .tstep__img{height:clamp(200px,29.4vh,264px)}
+  /* bento drops to two per row — three columns at this width squeezed the
+     narrow tiles down to an unreadable strip */
+  .bento__row,.bento__row--a,.bento__row--b{height:auto;flex-wrap:wrap}
+  .tile,.tile--w324,.tile--w420,.tile--w380,.tile--fill{
+    width:calc(50% - 12px);flex:1 1 calc(50% - 12px);min-width:0;
+    height:clamp(250px,33.4vh,300px);
+  }
+  .tile--lg{width:100%;flex:1 1 100%;height:clamp(280px,37.9vh,340px)}
+  /* tiers grow with their content instead of holding a fixed height.
+     min-height stays `auto`: the flex automatic minimum is what keeps a card
+     from collapsing under its own content once these stack. */
+  .tiers{align-items:stretch}
+  .tier,.tier--feature{min-height:auto;padding:32px}
+  .footer__cols{flex-wrap:wrap}
+  .footer__brand{width:100%}
+  .footer__col{flex:1 1 200px}
+  .footer__col--follow{width:auto;flex:1 1 200px}
+  /* horizontal-scroll comparison table with sticky label column */
+  .ctable{overflow:auto hidden;border-radius:16px;-webkit-overflow-scrolling:touch}
+  .ctable__row{width:max-content;min-width:100%}
+  .ctable__cell{flex:0 0 220px;width:220px}
+  .ctable__cell--label{position:sticky;left:0;z-index:2;flex:0 0 180px;width:180px;background:inherit}
+  .ctable__row--head .ctable__cell--label{background:var(--espresso)}
+  .ctable__row--alt .ctable__cell--label{background:var(--surface-muted)}
+}
+
+/* ---------- ≤899 · portrait tablet and phone ---------- */
+@media (max-width:899px){
+  :root{--sect-y:clamp(56px,8.9vh,80px);--faq-gutter:34px}
+  .nav__links,.nav__phone{display:none}
+  .nav__burger{display:inline-flex}
+  .nav{position:relative;flex-wrap:wrap;padding:0 16px}
+  .nav__mobile{
+    display:none;width:100%;flex-direction:column;gap:4px;
+    padding:8px 0 16px;border-top:1px solid var(--ink-10);margin-top:0;
+  }
+  .nav.is-open{padding-bottom:8px}
+  .nav.is-open .nav__mobile{display:flex}
+  .nav__mobile .nav__link{display:block;font-size:16px;padding:12px 10px}
+  .nav__cta{padding:10px 16px;font-size:14px}
+  .nav__right{gap:10px}
+  .nav{min-height:60px}
+  /* hero stays one screen: its own padding, gaps and type all scale with vh */
+  .hero__inner{gap:clamp(16px,3vh,40px)}
+  .hero__copy{gap:clamp(14px,2.4vh,24px)}
+  .hero__bottom{gap:clamp(18px,3.4vh,32px)}
+  .datastrip{flex-wrap:wrap;gap:0}
+  .datastrip__cell{flex:1 1 50%;min-width:50%;padding:12px 16px 0 0}
+  .datastrip__label{font-size:11px}
+  .datastrip__value{font-size:16px}
+  .trust__row{flex-wrap:wrap;gap:0}
+  .trust__item{flex:1 1 50%;min-width:50%;padding:10px 16px;border-left:0;border-bottom:1px solid var(--ink-10)}
+  .trust__item:first-child{padding:10px 16px}
+  .trust__item:nth-last-child(-n+1){border-bottom:0}
+  .quiz__panel{flex-direction:column;padding:28px;gap:28px;border-radius:20px}
+  .rail{width:100%;flex-direction:row;overflow:auto hidden;gap:8px;padding-bottom:4px}
+  .rail__label{display:none}
+  .rail__step{flex:0 0 auto;width:auto;border-bottom:0;padding:8px 12px;background:var(--surface-muted);border-radius:999px}
+  .rail__step.is-active{background:var(--espresso)}
+  .rail__step.is-active .rail__num,.rail__step.is-active .rail__name{color:var(--white)}
+  .rail__name{font-size:14px;white-space:nowrap}
+  .qrow{flex-direction:column}
+  .qcta{padding:16px 24px}
+  .tstep{flex-direction:column;height:auto}
+  .tstep__rule{display:none}
+  .tstep__cell,.tstep--right{width:100%;text-align:left;padding-top:0}
+  .tstep{padding-bottom:40px;border-bottom:1px solid var(--ink-20);margin-bottom:40px;gap:20px}
+  .timeline .tstep:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+  .tstep__num-m{display:block;margin-bottom:10px;font-size:14px;font-weight:500;letter-spacing:.6px;color:var(--ink-50)}
+  .tstep__img{min-height:0;height:clamp(170px,22.2vh,200px)}
+  .tstep__cell--media{order:-1}
+  .how__data{min-height:0;flex-wrap:wrap}
+  .how__data-cell{flex:1 1 50%;min-width:50%;padding:20px 8px;align-items:flex-start}
+  .boosters__row{flex-direction:column}
+  .bcard{padding:26px;border-radius:20px}
+  .bento__row,.bento__row--a,.bento__row--b{flex-direction:column;height:auto;flex-wrap:nowrap}
+  .tile,.tile--w324,.tile--w420,.tile--w380,.tile--fill{
+    width:100%;flex:1 1 auto;height:clamp(230px,31.1vh,280px);
+  }
+  .tile--lg{width:100%;flex:1 1 auto;height:clamp(260px,35.6vh,320px)}
+  .tile__scrim,.tile--lg .tile__scrim{padding:26px}
+  .social__scrim{padding:clamp(56px,8.9vh,80px) var(--page-x)}
+  .social__inner{gap:clamp(32px,4.9vh,44px)}
+  .tst-row{flex-direction:column;gap:28px}
+  .about__photo{height:clamp(230px,35.6vh,320px)}
+  .about__copy{padding:clamp(36px,5.3vh,48px) var(--page-x);gap:22px}
+  .tiers{flex-direction:column;align-items:stretch}
+  .tier,.tier--feature{min-height:auto;padding:30px;border-radius:20px}
+  .form__row{flex-direction:column}
+  .form{padding:28px;border-radius:20px}
+  .map{height:clamp(210px,28.9vh,260px)}
+  .faq__item{padding:26px 0}
+  .faq__question{padding-right:16px}
+  .footer__main{padding:clamp(40px,6.2vh,56px) var(--page-x) 44px}
+  .footer__cols{flex-direction:column;gap:36px}
+  .footer__col,.footer__col--follow{flex:none;width:100%}
+  .footer__bottom-inner{text-align:center}
+  .btn{padding:14px 24px}
+  .hero__ctas{gap:10px}
+  .hero__ctas .btn{flex:1 1 auto}
+}
+
+/* ---------- ≤599 · phones ---------- */
+@media (max-width:599px){
+  .nav__cta{display:none}
+  .nav.is-open .nav__mobile-cta{display:block}
+  .hero__ctas .btn{flex:1 1 100%}
+  /* the hero must stay one screen tall on a phone, and this strip repeats
+     verbatim as the data row in "How it works" a screen further down */
+  .hero .datastrip{display:none}
+  .quiz__panel{padding:22px}
+  .bcard{padding:22px}
+  .tier,.tier--feature{padding:24px}
+  .tile__scrim,.tile--lg .tile__scrim{padding:22px}
+  .form{padding:22px}
+  .ctable__cell{flex:0 0 190px;width:190px;padding:18px 14px}
+  .ctable__cell--label{flex:0 0 124px;width:124px;padding:18px 12px}
+}
+
+@media (max-width:479px){
+  :root{--page-x:20px}
+  .trust__item{flex:1 1 100%;min-width:100%}
+  .how__data-cell{flex:1 1 100%;min-width:100%}
+}
+
+/* ---------- SHORT VIEWPORTS · keep the headline clear of the header -------
+   A one-screen hero distributes its own leftover room, so when the viewport
+   gets short the copy creeps up under the nav card. These two tiers buy that
+   space back by tightening the hero's own type and rhythm, which is cheaper
+   than letting the block collide with the header. Financing appears again in
+   the trust strip and the FAQ, so the price line is the safest thing to drop.
+   -------------------------------------------------------------------------- */
+
+/* landscape tablets and short laptop windows */
+@media (max-height:740px) and (min-width:600px){
+  .hero__inner{gap:clamp(40px,7vh,64px)}
+  .hero__headline{font-size:clamp(32px,min(5.83vw,7vh),70px)}
+  .hero__intro{font-size:16px}
+  .hero__price{display:none}
+  .datastrip__cell{padding-top:12px}
+}
+
+/* small and short phones */
+@media (max-width:599px) and (max-height:700px),(max-width:359px){
+  .hero__inner{gap:clamp(32px,6vh,48px);padding-bottom:24px}
+  .hero__copy{gap:12px}
+  .hero__headline{font-size:clamp(30px,min(5.83vw,8.75vh),70px)}
+  .hero__price{display:none}
+  .hero__intro{font-size:14px;line-height:1.45}
+  .rating-chip{padding:6px 12px}
+  .hero__ctas .btn{padding:13px 20px}
+}
+
+/* ---------- landscape phones and other very short viewports: let the hero
+     grow past one screen rather than clip its own content ---------------- */
+@media (max-height:560px){
+  .hero{height:auto;min-height:100svh}
+  .hero .datastrip{display:none}
+}
+
+/* ============================================================
+   REDUCED MOTION — stamp final states, kill all motion
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  [data-hero-media],[data-hero-overlay],[data-hero-bottom]{opacity:1;transform:none}
+  [data-hero-nav]{translate:0 0}
+  [data-hero-title],[data-hero-info]{transform:none}
+  [data-animate],[data-animate="stagger"]>*,[data-card-item]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9QTMWWT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ============================================================
+     1 · HERO
+     ============================================================ -->
+<header class="hero" id="top" data-hero-animate>
+  <video class="hero__media" id="hero-video" data-hero-media
+         autoplay muted loop playsinline preload="none" disablepictureinpicture
+         data-src="images/ANU_HeroBanner_IVTherapy_1080_V1.webm"
+         poster="images/ANU_IVTherapy_DIGITAL_11.jpg" aria-hidden="true"></video>
+  <div class="hero__scrim" data-hero-overlay aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <nav class="nav" data-hero-nav aria-label="Main">
+      <a class="nav__logo" href="#top" aria-label="ANU Face, Mind, Body — home">
+        <img src="images/anu-logo.png" alt="ANU Face, Mind, Body">
+      </a>
+      <div class="nav__links">
+        <a class="nav__link" href="#drip-menu">Drip menu</a>
+        <a class="nav__link" href="#how-it-works">How it works</a>
+      </div>
+      <div class="nav__right">
+        <a class="nav__phone" href="tel:+12704913184">(270) 491-3184</a>
+        <a class="nav__cta" href="#booking">Book consultation</a>
+        <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
+      <div class="nav__mobile" id="nav-mobile">
+        <a class="nav__link" href="#drip-menu">Drip menu</a>
+        <a class="nav__link" href="#how-it-works">How it works</a>
+        <a class="nav__link" href="tel:+12704913184">(270) 491-3184</a>
+        <a class="nav__mobile-cta" href="#booking">Book consultation</a>
+      </div>
+    </nav>
+
+    <div class="hero__bottom">
+      <div class="hero__copy">
+        <div class="clip" data-hero-info-wrap>
+          <a class="rating-chip" data-hero-info href="#reviews">
+            <span class="rating-chip__stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-chip__src">GOOGLE REVIEWS</span>
+          </a>
+        </div>
+        <div class="clip" data-hero-title-wrap>
+          <h1 class="hero__headline" data-hero-title>Feel clear, hydrated and awake again.</h1>
+        </div>
+        <div class="hero__subgroup">
+          <div class="clip" data-hero-info-wrap>
+            <p class="hero__intro" data-hero-info>Physician-led IV therapy in Elizabethtown. Nutrients go straight to your bloodstream, 100% bioavailable, in one 30 to 45 minute session.</p>
+          </div>
+          <div class="clip" data-hero-info-wrap>
+            <p class="hero__price" data-hero-info>Transparent flat pricing · Financing via CareCredit &amp; PatientFi</p>
+          </div>
+        </div>
+        <div class="hero__ctas">
+          <a class="btn btn--white" href="#booking" data-btn-hero-primary>Book consultation <span aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--outline-light" href="#quiz" data-btn-outline-light>Take the 60-second quiz</a>
+        </div>
+      </div>
+
+      <div class="datastrip" data-hero-bottom>
+        <div class="datastrip__cell">
+          <span class="datastrip__label">TREATMENT TIME</span>
+          <span class="datastrip__value">30&ndash;45 minutes</span>
+        </div>
+        <div class="datastrip__cell">
+          <span class="datastrip__label">FIRST SIGNS</span>
+          <span class="datastrip__value">Within 30 minutes</span>
+        </div>
+        <div class="datastrip__cell">
+          <span class="datastrip__label">FULL EFFECT</span>
+          <span class="datastrip__value">2&ndash;4 hours</span>
+        </div>
+        <div class="datastrip__cell">
+          <span class="datastrip__label">RECOVERY</span>
+          <span class="datastrip__value">None, zero downtime</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     2 · TRUST STRIP
+     ============================================================ -->
+<section class="trust" aria-label="Why patients trust ANU">
+  <div class="trust__row" data-animate="stagger" data-stagger="0.08">
+    <p class="trust__item">Board-certified nurse practitioner</p>
+    <p class="trust__item">20 years of clinical experience</p>
+    <p class="trust__item">Evidence-based formulations</p>
+    <p class="trust__item">Sterile single-use technique</p>
+    <p class="trust__item">CareCredit &amp; PatientFi financing</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     3 · QUIZ
+     ============================================================ -->
+<section class="section quiz" id="quiz">
+  <div class="quiz__head">
+    <span class="clip" data-clip-wrap="tag">
+      <span class="eyebrow">
+        <span class="eyebrow__marker"></span>
+        <span class="eyebrow__label">60-SECOND ASSESSMENT</span>
+      </span>
+    </span>
+    <span class="clip" data-clip-wrap="title">
+      <h2 class="h2">Not sure which drip you need?</h2>
+    </span>
+    <p class="sub" data-animate="fade-up" data-delay="0.1">Four questions. Amy reviews every answer before your consultation.</p>
+  </div>
+
+  <div class="quiz__panel" data-animate="fade-up" data-duration="0.7">
+    <div class="rail" id="quiz-rail">
+      <span class="rail__label" id="rail-label">STEP 1 OF 4</span>
+      <div class="rail__step is-active" data-step="1">
+        <span class="rail__num">01</span><span class="rail__name">Your goal</span><span class="rail__check" aria-hidden="true">&#10003;</span>
+      </div>
+      <div class="rail__step" data-step="2">
+        <span class="rail__num">02</span><span class="rail__name">Your energy</span><span class="rail__check" aria-hidden="true">&#10003;</span>
+      </div>
+      <div class="rail__step" data-step="3">
+        <span class="rail__num">03</span><span class="rail__name">Symptoms</span><span class="rail__check" aria-hidden="true">&#10003;</span>
+      </div>
+      <div class="rail__step" data-step="4">
+        <span class="rail__num">04</span><span class="rail__name">Timing</span><span class="rail__check" aria-hidden="true">&#10003;</span>
+      </div>
+    </div>
+
+    <div class="qpanel">
+      <div class="qstage" id="quiz-stage">
+        <div class="qmeta">
+          <span class="qmeta__label" id="quiz-qmeta">QUESTION 1</span>
+          <div class="qtrack" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="1">
+            <div class="qtrack__fill" id="quiz-fill"></div>
+          </div>
+        </div>
+        <h3 class="qtext" id="quiz-question">What would you like to improve first?</h3>
+        <div class="qanswers" id="quiz-answers"></div>
+        <button class="btn btn--dark qcta" id="quiz-next" type="button" aria-disabled="true">See my recommended drip <span aria-hidden="true">&rarr;</span></button>
+        <button class="qback" id="quiz-back" type="button" hidden>&larr; Previous question</button>
+        <p class="qnote">No email required to see your result. Nothing is diagnosed online, Amy confirms your formulation in person.</p>
+      </div>
+
+      <div class="qresult" id="quiz-result" aria-live="polite">
+        <span class="qresult__kicker">YOUR RECOMMENDED STARTING POINT</span>
+        <h3 class="qresult__name" id="result-name">Hydration IV</h3>
+        <p class="qresult__body" id="result-body"></p>
+        <div class="qresult__facts">
+          <div class="qresult__fact"><span class="qresult__key">KEY NUTRIENTS</span><span class="qresult__val" id="result-nutrients"></span></div>
+          <div class="qresult__fact"><span class="qresult__key">SESSION TIME</span><span class="qresult__val" id="result-time"></span></div>
+          <div class="qresult__fact"><span class="qresult__key">SUGGESTED BOOSTER</span><span class="qresult__val" id="result-booster"></span></div>
+          <div class="qresult__fact"><span class="qresult__key">SUGGESTED RHYTHM</span><span class="qresult__val" id="result-rhythm"></span></div>
+        </div>
+        <div class="qresult__actions">
+          <a class="btn btn--dark" href="#booking" id="result-book">Book this consultation <span aria-hidden="true">&rarr;</span></a>
+          <button class="btn btn--outline-dark" type="button" id="quiz-restart">Start over</button>
+        </div>
+        <p class="qnote">Your answers are kept in this browser only and are never sent anywhere until you submit the booking form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4 · HOW IT WORKS
+     ============================================================ -->
+<section class="section how" id="how-it-works">
+  <span class="clip how__eyebrow" data-clip-wrap="tag">
+    <span class="eyebrow">
+      <span class="eyebrow__marker"></span>
+      <span class="eyebrow__label">HOW IT WORKS</span>
+    </span>
+  </span>
+  <span class="clip" data-clip-wrap="title">
+    <h2 class="how__heading">Three steps, about an hour of your day</h2>
+  </span>
+  <p class="how__sub" data-animate="fade-up" data-delay="0.1">No referral needed. Most patients are in the chair and back to their day inside an hour.</p>
+
+  <div class="timeline">
+    <div class="tstep" data-animate="fade-up">
+      <div class="tstep__cell tstep__cell--media">
+        <div class="tstep__img"><img src="images/ANU_BioidenticalHRT_DIGITAL_1.jpg" alt="Consultation before an IV therapy session at ANU" loading="lazy"></div>
+      </div>
+      <div class="tstep__rule">
+        <span class="rule-line rule-line--top"></span>
+        <span class="tstep__num">01</span>
+        <span class="rule-line rule-line--bottom"></span>
+      </div>
+      <div class="tstep__cell">
+        <span class="tstep__num-m" aria-hidden="true">STEP 01</span>
+        <h3 class="tstep__title">Consult &amp; assess</h3>
+        <p class="tstep__body">Amy reviews your medical history, medications, lifestyle and goals, then confirms IV therapy is a safe fit for you.</p>
+      </div>
+    </div>
+
+    <div class="tstep" data-animate="fade-up">
+      <div class="tstep__cell tstep--right">
+        <span class="tstep__num-m" aria-hidden="true">STEP 02</span>
+        <h3 class="tstep__title">Formulate</h3>
+        <p class="tstep__body">Your drip is mixed for you on the spot, and a catheter is placed in the arm or hand by a licensed clinician.</p>
+      </div>
+      <div class="tstep__rule">
+        <span class="rule-line rule-line--top"></span>
+        <span class="tstep__num">02</span>
+        <span class="rule-line rule-line--bottom"></span>
+      </div>
+      <div class="tstep__cell tstep__cell--media">
+        <div class="tstep__img"><img src="images/ANU_IVTherapy_DIGITAL_12.jpg" alt="Formulating an IV drip at ANU" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="tstep" data-animate="fade-up">
+      <div class="tstep__cell tstep__cell--media">
+        <div class="tstep__img"><img src="images/ANU_IVTherapy_DIGITAL_15.jpg" alt="A patient in the infusion chair at ANU" loading="lazy"></div>
+      </div>
+      <div class="tstep__rule">
+        <span class="rule-line rule-line--top"></span>
+        <span class="tstep__num">03</span>
+        <span class="rule-line rule-line--short"></span>
+      </div>
+      <div class="tstep__cell">
+        <span class="tstep__num-m" aria-hidden="true">STEP 03</span>
+        <h3 class="tstep__title">Infuse &amp; go</h3>
+        <p class="tstep__body">Thirty to forty-five minutes in the chair, then straight back to your day. No recovery, no downtime.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="how__data" data-animate="stagger" data-stagger="0.08">
+    <div class="how__data-cell"><span class="how__data-label">TREATMENT TIME</span><span class="how__data-value">30&ndash;45 min</span></div>
+    <div class="how__data-cell"><span class="how__data-label">FIRST SIGNS</span><span class="how__data-value">Within 30 min</span></div>
+    <div class="how__data-cell"><span class="how__data-label">FULL EFFECT</span><span class="how__data-value">2&ndash;4 hours</span></div>
+    <div class="how__data-cell"><span class="how__data-label">RECOVERY</span><span class="how__data-value">None</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5 · DRIP MENU — COMPARISON TABLE
+     ============================================================ -->
+<section class="section menu" id="drip-menu">
+  <div class="container menu__container">
+    <div class="menu__head">
+      <div class="menu__head-left">
+        <span class="clip" data-clip-wrap="tag">
+          <span class="eyebrow">
+            <span class="eyebrow__marker"></span>
+            <span class="eyebrow__label">THE DRIP MENU</span>
+          </span>
+        </span>
+        <span class="clip" data-clip-wrap="title">
+          <h2 class="h2">Four formulations. One is built for you.</h2>
+        </span>
+      </div>
+      <p class="menu__head-right" data-animate="fade-up" data-delay="0.1">Every drip is mixed for your history, medications and goals. Compare the four we start from, then let the quiz narrow it down.</p>
+    </div>
+
+    <div class="ctable" data-animate="fade-up" data-duration="0.7" role="table" aria-label="Drip comparison">
+      <div class="ctable__row ctable__row--head" role="row">
+        <div class="ctable__cell ctable__cell--label" role="columnheader"><span class="ctable__lab">COMPARE</span></div>
+        <div class="ctable__cell" role="columnheader"><span class="ctable__name">Hydration IV</span></div>
+        <div class="ctable__cell" role="columnheader"><span class="ctable__name">Immunity IV</span></div>
+        <div class="ctable__cell" role="columnheader"><span class="ctable__name">Energy &amp; Metabolic IV</span></div>
+        <div class="ctable__cell" role="columnheader"><span class="ctable__name">Beauty &amp; Skin IV</span></div>
+      </div>
+      <div class="ctable__row" role="row">
+        <div class="ctable__cell ctable__cell--label" role="cell"><span class="ctable__lab">BEST FOR</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Post-illness, travel, heat or hard exertion</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Prevention and faster recovery</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Low energy and sluggish metabolism</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Collagen, brightness and skin health</span></div>
+      </div>
+      <div class="ctable__row ctable__row--alt" role="row">
+        <div class="ctable__cell ctable__cell--label" role="cell"><span class="ctable__lab">KEY NUTRIENTS</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Fluids and balanced electrolytes</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Vitamin C, zinc and immune-support nutrients</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">B-complex and cellular energy nutrients</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Nutrients supporting collagen and skin</span></div>
+      </div>
+      <div class="ctable__row" role="row">
+        <div class="ctable__cell ctable__cell--label" role="cell"><span class="ctable__lab">FEELS LIKE</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Rehydrated and level again</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Fortified before or after exposure</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">A steady lift, not a jolt</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Fresh, hydrated, awake</span></div>
+      </div>
+      <div class="ctable__row ctable__row--alt" role="row">
+        <div class="ctable__cell ctable__cell--label" role="cell"><span class="ctable__lab">SESSION TIME</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">30&ndash;40 min</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">30&ndash;45 min</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">35&ndash;45 min</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">40&ndash;45 min</span></div>
+      </div>
+      <div class="ctable__row" role="row">
+        <div class="ctable__cell ctable__cell--label" role="cell"><span class="ctable__lab">PAIR WITH</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Extra fluids</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Glutathione</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Vitamin B12 · L-Carnitine</span></div>
+        <div class="ctable__cell" role="cell"><span class="ctable__txt">Glutathione · NAD+ IM</span></div>
+      </div>
+      <div class="ctable__row ctable__row--last" role="row">
+        <div class="ctable__cell ctable__cell--label" role="cell"><span class="ctable__lab">BOOK</span></div>
+        <div class="ctable__cell" role="cell"><a class="btn btn--outline-dark btn--sm ctable__btn" href="#booking" data-pick="Hydration IV">Choose <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="ctable__cell" role="cell"><a class="btn btn--outline-dark btn--sm ctable__btn" href="#booking" data-pick="Immunity IV">Choose <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="ctable__cell" role="cell"><a class="btn btn--outline-dark btn--sm ctable__btn" href="#booking" data-pick="Energy &amp; Metabolic IV">Choose <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="ctable__cell" role="cell"><a class="btn btn--outline-dark btn--sm ctable__btn" href="#booking" data-pick="Beauty &amp; Skin IV">Choose <span aria-hidden="true">&rarr;</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6 · BOOSTERS
+     ============================================================ -->
+<section class="section boosters" id="boosters">
+  <div class="container boosters__container">
+    <div class="sect-head">
+      <div class="sect-head__left">
+        <span class="clip" data-clip-wrap="tag">
+          <span class="eyebrow">
+            <span class="eyebrow__marker"></span>
+            <span class="eyebrow__label">ADD-ON BOOSTERS</span>
+          </span>
+        </span>
+        <span class="clip" data-clip-wrap="title">
+          <h2 class="h2">Add a booster to any drip.</h2>
+        </span>
+      </div>
+      <p class="sect-head__right sub" data-animate="fade-up" data-delay="0.1">Small additions with a specific job. Amy will tell you which ones are worth it for you, and which are not.</p>
+    </div>
+
+    <div class="boosters__grid">
+      <div class="boosters__row" data-card-stagger="0.1">
+        <article class="bcard" data-card-item data-card-hover>
+          <span class="bcard__icon"><svg viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>
+          <h3 class="bcard__name">Glutathione</h3>
+          <p class="bcard__benefit">Master antioxidant, detox and skin support</p>
+        </article>
+        <article class="bcard" data-card-item data-card-hover>
+          <span class="bcard__icon"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
+          <h3 class="bcard__name">Extra fluids</h3>
+          <p class="bcard__benefit">An additional bag when you are running dry</p>
+        </article>
+        <article class="bcard" data-card-item data-card-hover>
+          <span class="bcard__icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg></span>
+          <h3 class="bcard__name">Vitamin B12</h3>
+          <p class="bcard__benefit">Energy and nervous-system support</p>
+        </article>
+      </div>
+      <div class="boosters__row" data-card-stagger="0.1">
+        <article class="bcard" data-card-item data-card-hover>
+          <span class="bcard__icon"><svg viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+          <h3 class="bcard__name">L-Carnitine</h3>
+          <p class="bcard__benefit">Supports fat metabolism and endurance</p>
+        </article>
+        <article class="bcard" data-card-item data-card-hover>
+          <span class="bcard__icon"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3 class="bcard__name">Zofran</h3>
+          <p class="bcard__benefit">Anti-nausea, added when you need it</p>
+        </article>
+        <article class="bcard" data-card-item data-card-hover>
+          <span class="bcard__icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+          <h3 class="bcard__name">NAD+ IM injection</h3>
+          <p class="bcard__benefit">Cellular repair, 100 mg and 200 mg</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7 · INDICATIONS BENTO
+     ============================================================ -->
+<section class="section bento">
+  <div class="container bento__container">
+    <div class="sect-head bento__head">
+      <div class="sect-head__left">
+        <span class="clip" data-clip-wrap="tag">
+          <span class="eyebrow">
+            <span class="eyebrow__marker"></span>
+            <span class="eyebrow__label">WHAT PEOPLE COME IN FOR</span>
+          </span>
+        </span>
+        <span class="clip" data-clip-wrap="title">
+          <h2 class="h2">Reasons patients book a drip.</h2>
+        </span>
+      </div>
+      <p class="sect-head__right sub" data-animate="fade-up" data-delay="0.1">If none of these sound like you, say so at the consultation, Amy will tell you if there is nothing to treat.</p>
+    </div>
+
+    <div class="bento__row bento__row--a" data-card-stagger="0.1">
+      <article class="tile tile--lg" data-card-item>
+        <img class="tile__img" src="images/ANU_IND_LowEnergy.jpg" alt="" loading="lazy">
+        <div class="tile__scrim">
+          <h3 class="tile__title">Low energy &amp; fatigue</h3>
+          <p class="tile__body">B-vitamin and nutrient infusions that support cellular energy, the most common reason patients walk through the door.</p>
+        </div>
+      </article>
+      <article class="tile tile--w324" data-card-item>
+        <img class="tile__img" src="images/ANU_IND_Dehydration.jpg" alt="" loading="lazy">
+        <div class="tile__scrim">
+          <h3 class="tile__title">Dehydration &amp; recovery</h3>
+          <p class="tile__body">After illness, heat, travel or a hard training block.</p>
+        </div>
+      </article>
+      <article class="tile tile--fill" data-card-item>
+        <img class="tile__img" src="images/ANU_IND_Immunity.jpg" alt="" loading="lazy">
+        <div class="tile__scrim">
+          <h3 class="tile__title">Weakened immunity</h3>
+          <p class="tile__body">Vitamin C and zinc to support immune defenses.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="bento__row bento__row--b" data-card-stagger="0.1">
+      <article class="tile tile--w420" data-card-item>
+        <img class="tile__img" src="images/ANU_IND_Deficiencies.jpg" alt="" loading="lazy">
+        <div class="tile__scrim">
+          <h3 class="tile__title">Nutrient deficiencies</h3>
+          <p class="tile__body">Direct delivery that bypasses gut absorption issues, so nothing is lost on the way.</p>
+        </div>
+      </article>
+      <article class="tile tile--fill" data-card-item>
+        <img class="tile__img" src="images/ANU_IND_Stress.jpg" alt="" loading="lazy">
+        <div class="tile__scrim">
+          <h3 class="tile__title">Stress &amp; burnout</h3>
+          <p class="tile__body">Vitamin and mineral support for the flattened, wrung-out weeks that follow a long stretch of pressure.</p>
+        </div>
+      </article>
+      <article class="tile tile--w380" data-card-item>
+        <img class="tile__img" src="images/ANU_IND_Optimization.jpg" alt="" loading="lazy">
+        <div class="tile__scrim">
+          <h3 class="tile__title">Wellness optimization</h3>
+          <p class="tile__body">For people already well who want to feel sharper.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8 · SOCIAL PROOF
+     ============================================================ -->
+<section class="social" id="reviews">
+  <img class="social__img" src="images/ANU_IVTherapy_DIGITAL_9.jpg" alt="" loading="lazy" data-parallax="0.15">
+  <div class="social__scrim">
+    <div class="social__inner">
+      <div class="social__head">
+        <div class="social__head-left">
+          <span class="clip" data-clip-wrap="tag">
+            <span class="eyebrow eyebrow--light">
+              <span class="eyebrow__marker"></span>
+              <span class="eyebrow__label">PATIENT STORIES</span>
+            </span>
+          </span>
+          <span class="clip" data-clip-wrap="title">
+            <h2 class="social__h2">Quiet results, from people down the road.</h2>
+          </span>
+        </div>
+        <a class="rating-badge" href="https://maps.app.goo.gl/K2Ci87mapDEjAJGo9" target="_blank" rel="noopener noreferrer" data-animate="fade-up">
+          <span class="rating-badge__stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-badge__src">5.0 · 5 GOOGLE REVIEWS</span>
+        </a>
+      </div>
+
+      <div class="tst-row" data-card-stagger="0.1">
+        <figure class="tst" data-card-item>
+          <span class="tst__stars" aria-hidden="true">★★★★★</span>
+          <blockquote class="tst__quote">I am very happy with my results. Amy is very thorough. I like that she monitors my labs and my body composition at each visit. I feel safe with her.</blockquote>
+          <figcaption class="tst__attr">Betty Villanueva · Google review</figcaption>
+        </figure>
+        <figure class="tst" data-card-item>
+          <span class="tst__stars" aria-hidden="true">★★★★★</span>
+          <blockquote class="tst__quote">What an experience!! Amy and Gillian are the BEST to work with. Of course if you know Amy you already know she is wonderful and add Gillian to the mix and you have what an office should be, Professional!!</blockquote>
+          <figcaption class="tst__attr">Jennifer Whitlock · Google review</figcaption>
+        </figure>
+        <figure class="tst" data-card-item>
+          <span class="tst__stars" aria-hidden="true">★★★★★</span>
+          <blockquote class="tst__quote">Finally someone who treats the whole body! Looking for the underlying issues!! Its not a one size fits all!! Dr Nunn and staff are amazing.</blockquote>
+          <figcaption class="tst__attr">Karen Elliott · Google review</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9 · ABOUT AMY
+     ============================================================ -->
+<section class="about" id="about" data-about-scroll-animate>
+  <div class="about__photo px-holder">
+    <img class="fill-image" src="images/ANU_Team_DIGITAL_1.jpg" alt="Amy Nunn, board-certified nurse practitioner at ANU Face, Mind, Body" loading="lazy">
+  </div>
+  <div class="about__copy">
+    <span class="eyebrow eyebrow--light" data-about-grid-item>
+      <span class="eyebrow__marker"></span>
+      <span class="eyebrow__label">YOUR PROVIDER</span>
+    </span>
+    <h2 class="about__h2" data-about-title>Care you can ask questions of.</h2>
+    <p class="about__body" data-about-grid-item>Amy Nunn is a board-certified nurse practitioner who has spent twenty years in healthcare. Every formulation at ANU is evidence-based, mixed on site and reviewed against your history and medications before it is hung.</p>
+    <div class="creds" data-about-grid-item>
+      <div class="cred"><span class="cred__key">AGPCNP-BC</span><span class="cred__val">Adult-gerontology primary care NP</span></div>
+      <div class="cred"><span class="cred__key">PMHNP-BC</span><span class="cred__val">Psychiatric mental health NP</span></div>
+      <div class="cred"><span class="cred__key">20 YEARS</span><span class="cred__val">Clinical healthcare experience</span></div>
+    </div>
+    <a class="btn btn--outline-light about__cta" href="#booking" data-about-grid-item data-btn-outline-light>Book a consultation with Amy <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- ============================================================
+     11 · CLINIC INFO & CONTACT
+     ============================================================ -->
+<section class="section contact" id="booking">
+  <div class="container contact__container">
+    <div class="clinic">
+      <span class="clip" data-clip-wrap="tag">
+        <span class="eyebrow">
+          <span class="eyebrow__marker"></span>
+          <span class="eyebrow__label">VISIT THE CLINIC</span>
+        </span>
+      </span>
+      <span class="clip" data-clip-wrap="title">
+        <h2 class="clinic__h2">230 Buford Lane, Elizabethtown.</h2>
+      </span>
+
+      <div class="info-list" data-animate="stagger" data-stagger="0.08">
+        <div class="info">
+          <span class="info__label">ADDRESS</span>
+          <a class="info__value" href="https://maps.app.goo.gl/K2Ci87mapDEjAJGo9" target="_blank" rel="noopener noreferrer">230 Buford Lane, Suite 108, Elizabethtown, KY 42701</a>
+        </div>
+        <div class="info">
+          <span class="info__label">PHONE</span>
+          <a class="info__value" href="tel:+12704913184">(270) 491-3184</a>
+        </div>
+        <div class="info">
+          <span class="info__label">EMAIL</span>
+          <a class="info__value" href="mailto:info@anufacemindbody.com">info@anufacemindbody.com</a>
+        </div>
+        <div class="info">
+          <span class="info__label">HOURS</span>
+          <span class="info__value">Monday&ndash;Friday 10:00 AM &ndash; 6:00 PM · Saturday &amp; Sunday closed</span>
+        </div>
+      </div>
+
+      <div class="map" data-animate="fade-up">
+        <iframe class="map__frame"
+          title="ANU Face, Mind, Body on Google Maps"
+          src="https://www.google.com/maps?q=ANU+Face%2C+Mind%2C+Body%2C+230+Buford+Ln%2C+Elizabethtown%2C+KY+42701&amp;z=16&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <form class="form" id="booking-form" novalidate data-animate="fade-up" data-duration="0.7">
+      <h2 class="form__title">Request a booking</h2>
+      <p class="form__sub">Send this and the clinic will call you back with two or three times that work. No card needed to hold a slot.</p>
+
+      <div class="form__row">
+        <div class="field">
+          <label class="field__label" for="f-first">FIRST NAME</label>
+          <input class="field__ctrl" id="f-first" name="first_name" type="text" placeholder="First name" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-last">LAST NAME</label>
+          <input class="field__ctrl" id="f-last" name="last_name" type="text" placeholder="Last name" autocomplete="family-name" required>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label class="field__label" for="f-phone">PHONE NUMBER</label>
+          <input class="field__ctrl" id="f-phone" name="phone" type="tel" placeholder="(270) 000-0000" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-email">EMAIL</label>
+          <input class="field__ctrl" id="f-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="f-msg">WHAT IS GOING ON?</label>
+        <textarea class="field__ctrl" id="f-msg" name="message" placeholder="Low energy for a few weeks, travelling a lot, want to know what would help."></textarea>
+      </div>
+
+      <button class="btn btn--dark btn--block" type="submit">Request booking <span aria-hidden="true">&rarr;</span></button>
+      <p class="form__status" id="form-status" role="status"></p>
+      <p class="form__note">By sending this you agree to be contacted about your appointment. Nothing is diagnosed by form, Amy confirms everything in person.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     12 · FAQ
+     ============================================================ -->
+<section class="section faq">
+  <div class="container faq__container">
+    <div class="sect-head">
+      <div class="sect-head__left">
+        <span class="clip" data-clip-wrap="tag">
+          <span class="eyebrow">
+            <span class="eyebrow__marker" style="background:var(--accent)"></span>
+            <span class="eyebrow__label">BEFORE YOU BOOK</span>
+          </span>
+        </span>
+        <span class="clip" data-clip-wrap="title">
+          <h2 class="h2">The questions people actually ask.</h2>
+        </span>
+      </div>
+      <p class="sect-head__right faq__head-right sub" data-animate="fade-up" data-delay="0.1">Anything not covered here, ask Amy at the consultation, there is no charge to ask.</p>
+    </div>
+
+    <div class="faq__list" id="faq-list"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     13 · FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <a class="footer__logo" href="#top" aria-label="ANU Face, Mind, Body — home">
+          <img src="images/anu-logo-w.png" alt="ANU Face, Mind, Body">
+        </a>
+        <p class="footer__tagline">Face | Mind | Body. Medically supervised IV therapy and aesthetics, locally owned in Elizabethtown, Kentucky.</p>
+        <a class="footer__cta" href="#booking">Book consultation</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__col-title">Contact Us</h3>
+        <div class="footer__links">
+          <a class="footer__link" href="https://maps.app.goo.gl/K2Ci87mapDEjAJGo9" target="_blank" rel="noopener noreferrer">230 Buford Lane, Suite 108</a>
+          <a class="footer__link" href="https://maps.app.goo.gl/K2Ci87mapDEjAJGo9" target="_blank" rel="noopener noreferrer">Elizabethtown, KY 42701</a>
+          <a class="footer__link" href="tel:+12704913184">(270) 491-3184</a>
+          <a class="footer__link" href="mailto:info@anufacemindbody.com">info@anufacemindbody.com</a>
+          <span class="footer__link">Mon&ndash;Fri 10:00 AM &ndash; 6:00 PM</span>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--follow">
+        <h3 class="footer__col-title">Follow Us</h3>
+        <div class="footer__links">
+          <a class="footer__social" href="https://www.instagram.com/anufacemindbody/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a class="footer__social" href="https://www.facebook.com/anufacemindbody/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a class="footer__social" href="https://www.tiktok.com/@anufacemindbody" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <span class="footer__copy">&copy; 2026 ANU Face | Mind | Body. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+/* ============================================================
+   HERO VIDEO — plays on phone and tablet as well as desktop.
+   Still skipped when the device asks us to save data or motion, or on a
+   2G-class connection; in those cases the poster frame carries the hero.
+   ============================================================ */
+(function heroVideo(){
+  const v = document.getElementById("hero-video");
+  if (!v) return;
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const conn    = navigator.connection || {};
+  const cheap   = conn.saveData === true || /(^|-)2g$/.test(conn.effectiveType || "");
+  if (reduced || cheap) return;
+  const src = document.createElement("source");
+  src.src = v.dataset.src;
+  src.type = "video/webm";
+  v.appendChild(src);
+  v.preload = "auto";
+  v.load();
+  /* iOS only honours autoplay for a muted, inline video — both are set on the
+     element; retry once on the first touch if the browser still refuses. */
+  const tryPlay = ()=>{
+    const play = v.play();
+    if (play && play.catch) play.catch(()=>{
+      const once = ()=>{ v.play().catch(()=>{}); document.removeEventListener("touchstart", once); };
+      document.addEventListener("touchstart", once, {passive:true, once:true});
+    });
+  };
+  tryPlay();
+})();
+
+/* ============================================================
+   CONTENT DATA
+   ============================================================ */
+const FAQS = [
+  ["How many sessions will I need?",
+   "Most patients start with weekly sessions for the first month, then move to every two to four weeks depending on energy levels and goals. Amy sets the cadence with you at the consultation rather than selling you a fixed course up front."],
+  ["Does it hurt?",
+   "A single small needle goes in at the start, the same sensation as a routine blood draw. After that the catheter is soft and most patients read, work or sleep through the session. If you are needle-shy, say so, the team will take it slowly and numb the site."],
+  ["Will my insurance cover it?",
+   "IV nutrient therapy is not usually covered by insurance, so ANU keeps it on transparent flat pricing with no surprise add-ons. CareCredit and PatientFi financing are available if you would rather spread the cost, and you can pay by cash or card."],
+  ["Can I combine it with other treatments?",
+   "Yes, and many patients do. Drips are frequently scheduled alongside aesthetic or weight-management appointments so you only make one trip. Amy checks the timing and the ingredient list against anything else you are receiving before combining them."],
+  ["Who should not have IV therapy?",
+   "IV therapy is not appropriate for everyone. Kidney or heart conditions, fluid restrictions, pregnancy, certain medications and some allergies can all rule it out or change the formulation. That is exactly what the consultation is for, and Amy will tell you plainly if the answer is no."],
+  ["How is this different from oral vitamins?",
+   "Swallowed nutrients have to survive the gut and the liver first, so only a fraction reaches your bloodstream. An IV bypasses digestion entirely, so the nutrients arrive in your bloodstream 100% bioavailable, which is why the effect is noticeable the same day rather than over weeks."]
+];
+
+const DRIPS = {
+  hydration:{
+    name:"Hydration IV",
+    body:"Your answers point to fluid and electrolyte loss rather than a nutrient gap. Hydration IV is the simplest place to start: balanced fluids and electrolytes, straight in, with nothing you do not need.",
+    nutrients:"Fluids and balanced electrolytes",
+    time:"30 to 40 minutes",
+    booster:"Extra fluids"
+  },
+  immunity:{
+    name:"Immunity IV",
+    body:"Your answers lean toward recovery and prevention. Immunity IV is built around vitamin C, zinc and immune-support nutrients, either before a period of exposure or after something has knocked you down.",
+    nutrients:"Vitamin C, zinc and immune-support nutrients",
+    time:"30 to 45 minutes",
+    booster:"Glutathione"
+  },
+  energy:{
+    name:"Energy & Metabolic IV",
+    body:"Your answers point to flat energy and a sluggish metabolism. Energy & Metabolic IV uses B-complex and cellular energy nutrients for a steady lift rather than a jolt, which is why most patients feel it the same afternoon.",
+    nutrients:"B-complex and cellular energy nutrients",
+    time:"35 to 45 minutes",
+    booster:"Vitamin B12 or L-Carnitine"
+  },
+  beauty:{
+    name:"Beauty & Skin IV",
+    body:"Your answers point to skin, brightness and collagen support. Beauty & Skin IV carries the nutrients that support collagen and skin health, and it pairs well with the aesthetic side of the clinic.",
+    nutrients:"Nutrients supporting collagen and skin",
+    time:"40 to 45 minutes",
+    booster:"Glutathione or NAD+ IM"
+  }
+};
+
+const QUESTIONS = [
+  { rail:"Your goal", meta:"QUESTION 1", text:"What would you like to improve first?",
+    options:[
+      ["Energy & focus",         {energy:3}],
+      ["Recovery after illness", {immunity:3}],
+      ["Hydration & travel",     {hydration:3}],
+      ["Skin & collagen",        {beauty:3}]
+    ]},
+  { rail:"Your energy", meta:"QUESTION 2", text:"How would you describe your energy most days?",
+    options:[
+      ["Flat from the moment I wake up", {energy:2}],
+      ["Fine until early afternoon",     {energy:1,hydration:1}],
+      ["Fine, but I want more headroom",  {beauty:1,immunity:1}],
+      ["Wrung out after a hard stretch",  {energy:1,immunity:1}]
+    ]},
+  { rail:"Symptoms", meta:"QUESTION 3", text:"Which of these sounds most like the past two weeks?",
+    options:[
+      ["Headaches, thirst, dark urine",   {hydration:2}],
+      ["Getting sick more than usual",    {immunity:2}],
+      ["Brain fog and low motivation",    {energy:2}],
+      ["Dull skin, slow healing",         {beauty:2}]
+    ]},
+  { rail:"Timing", meta:"QUESTION 4", text:"When would you like to come in?",
+    options:[
+      ["As soon as you can fit me in", {}],
+      ["Some time this week",          {}],
+      ["Next week or later",           {}],
+      ["Still deciding",               {}]
+    ]}
+];
+
+const RHYTHMS = [
+  "Weekly for the first month, then every two to four weeks",
+  "Weekly for the first month, then every two to four weeks",
+  "Every two weeks to start, reviewed after the first month",
+  "Start with a single session, then decide with Amy"
+];
+
+/* ============================================================
+   BUILD FAQ
+   ============================================================ */
+const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+
+(function buildFaq(){
+  const list = document.getElementById("faq-list");
+  list.innerHTML = FAQS.map(([q,a],i)=>{
+    const n = String(i+1).padStart(2,"0");
+    const open = i === 0;
+    return `<div class="faq__item${open ? " is-open" : ""}" data-faq-item>
+      <button class="faq__q" type="button" aria-expanded="${open}" aria-controls="faq-a-${i}">
+        <span class="faq__num">${n}</span>
+        <span class="faq__question">${q}</span>
+        <span class="faq__chev">${CHEV}</span>
+      </button>
+      <div class="faq__a" id="faq-a-${i}" role="region"${open ? ' style="height:auto;opacity:1"' : ''}>
+        <div class="faq__a-inner"><p class="faq__answer">${a}</p></div>
+      </div>
+    </div>`;
+  }).join("");
+})();
+
+/* ============================================================
+   QUIZ
+   ============================================================ */
+(function quiz(){
+  const railLabel = document.getElementById("rail-label");
+  const railSteps = [...document.querySelectorAll(".rail__step")];
+  const metaEl    = document.getElementById("quiz-qmeta");
+  const fillEl    = document.getElementById("quiz-fill");
+  const trackEl   = fillEl.parentElement;
+  const qEl       = document.getElementById("quiz-question");
+  const aEl       = document.getElementById("quiz-answers");
+  const nextBtn   = document.getElementById("quiz-next");
+  const backBtn   = document.getElementById("quiz-back");
+  const stageEl   = document.getElementById("quiz-stage");
+  const resultEl  = document.getElementById("quiz-result");
+  const restart   = document.getElementById("quiz-restart");
+
+  let step = 0;
+  const picks = new Array(QUESTIONS.length).fill(null);
+
+  function render(){
+    const q = QUESTIONS[step];
+    railLabel.textContent = `STEP ${step+1} OF ${QUESTIONS.length}`;
+    metaEl.textContent = q.meta;
+    qEl.textContent = q.text;
+    fillEl.style.width = ((step+1)/QUESTIONS.length*100) + "%";
+    trackEl.setAttribute("aria-valuenow", String(step+1));
+
+    railSteps.forEach((s,i)=>{
+      s.classList.toggle("is-active", i===step);
+      s.classList.toggle("is-done", picks[i]!==null && i!==step);
+    });
+
+    aEl.innerHTML = "";
+    for(let r=0;r<q.options.length;r+=2){
+      const row = document.createElement("div");
+      row.className = "qrow";
+      q.options.slice(r,r+2).forEach((opt,j)=>{
+        const idx = r+j;
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "qopt" + (picks[step]===idx ? " is-selected" : "");
+        b.setAttribute("aria-pressed", picks[step]===idx ? "true" : "false");
+        b.innerHTML = `<span class="qopt__marker"></span><span class="qopt__label">${opt[0]}</span>`;
+        b.addEventListener("click", ()=>{
+          picks[step] = idx;
+          render();
+        });
+        row.appendChild(b);
+      });
+      aEl.appendChild(row);
+    }
+
+    const last = step === QUESTIONS.length-1;
+    nextBtn.innerHTML = last
+      ? 'See my recommended drip <span aria-hidden="true">&rarr;</span>'
+      : 'Next question <span aria-hidden="true">&rarr;</span>';
+    nextBtn.setAttribute("aria-disabled", picks[step]===null ? "true" : "false");
+    backBtn.hidden = step===0;
+
+    if (!window.__REDUCED) {
+      gsap.fromTo(aEl.children, {autoAlpha:0, y:12},
+        {autoAlpha:1, y:0, duration:0.35, ease:"expo.out", stagger:0.06, overwrite:true});
+    }
+  }
+
+  function score(){
+    const totals = {hydration:0, immunity:0, energy:0, beauty:0};
+    picks.forEach((p,i)=>{
+      if(p===null) return;
+      const w = QUESTIONS[i].options[p][1];
+      Object.keys(w).forEach(k=>{ totals[k] += w[k]; });
+    });
+    let best = "energy", bestVal = -1;
+    ["energy","immunity","hydration","beauty"].forEach(k=>{
+      if(totals[k] > bestVal){ bestVal = totals[k]; best = k; }
+    });
+    return best;
+  }
+
+  function showResult(){
+    const key = score();
+    const d = DRIPS[key];
+    document.getElementById("result-name").textContent = d.name;
+    document.getElementById("result-body").textContent = d.body;
+    document.getElementById("result-nutrients").textContent = d.nutrients;
+    document.getElementById("result-time").textContent = d.time;
+    document.getElementById("result-booster").textContent = d.booster;
+    document.getElementById("result-rhythm").textContent = RHYTHMS[picks[3] ?? 3];
+
+    railSteps.forEach(s=>{ s.classList.remove("is-active"); s.classList.add("is-done"); });
+    railLabel.textContent = "YOUR RESULT";
+    stageEl.classList.add("is-hidden");
+    resultEl.classList.add("is-visible");
+
+    const msg = document.getElementById("f-msg");
+    if (msg && !msg.value) {
+      msg.value = `Quiz result: ${d.name}. Suggested booster: ${d.booster}. Timing: ${QUESTIONS[3].options[picks[3] ?? 3][0].toLowerCase()}.`;
+    }
+
+    if (!window.__REDUCED) {
+      gsap.fromTo(resultEl.children, {autoAlpha:0, y:20},
+        {autoAlpha:1, y:0, duration:0.5, ease:"power3.out", stagger:0.07});
+    }
+    if (window.ScrollTrigger) ScrollTrigger.refresh();
+  }
+
+  nextBtn.addEventListener("click", ()=>{
+    if(picks[step]===null){
+      if(!window.__REDUCED) gsap.fromTo(aEl, {x:-5}, {x:0, duration:0.4, ease:"elastic.out(1,0.4)"});
+      const first = aEl.querySelector(".qopt"); if(first) first.focus();
+      return;
+    }
+    if(step === QUESTIONS.length-1){ showResult(); return; }
+    step++; render();
+  });
+  backBtn.addEventListener("click", ()=>{ if(step>0){ step--; render(); } });
+  restart.addEventListener("click", ()=>{
+    step = 0; picks.fill(null);
+    resultEl.classList.remove("is-visible");
+    stageEl.classList.remove("is-hidden");
+    render();
+    if (window.ScrollTrigger) ScrollTrigger.refresh();
+  });
+
+  render();
+})();
+
+/* ============================================================
+   MOTION LAYER — anubody.com language, GSAP 3 + ScrollTrigger
+   ============================================================ */
+(function motion(){
+  gsap.registerPlugin(ScrollTrigger);
+
+  const REDUCED   = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const IS_MOBILE = matchMedia("(max-width: 768px)").matches;
+  const IS_TOUCH  = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  const LOW_POWER = IS_MOBILE && (navigator.hardwareConcurrency || 8) <= 4;
+  window.__REDUCED = REDUCED;
+
+  gsap.config({ nullTargetWarn:false });
+  gsap.defaults({ ease:"power3.out", duration: LOW_POWER ? 0.4 : 0.6 });
+
+  /* ---------- FAQ accordion (works with or without motion) ---------- */
+  document.querySelectorAll("[data-faq-item]").forEach(item=>{
+    const btn   = item.querySelector(".faq__q");
+    const panel = item.querySelector(".faq__a");
+    btn.addEventListener("click", ()=>{
+      const open = item.classList.contains("is-open");
+      item.classList.toggle("is-open", !open);
+      btn.setAttribute("aria-expanded", String(!open));
+      if (REDUCED){
+        panel.style.height = open ? "0px" : "auto";
+        panel.style.opacity = open ? "0" : "1";
+        return;
+      }
+      gsap.to(panel, {
+        height: open ? 0 : "auto",
+        opacity: open ? 0 : 1,
+        duration: 0.4, ease:"expo.out", overwrite:true,
+        onComplete: ()=> ScrollTrigger.refresh()
+      });
+    });
+  });
+
+  /* ---------- mobile nav ---------- */
+  const navEl = document.querySelector(".nav");
+  const toggle = document.querySelector("[data-nav-toggle]");
+  if (toggle){
+    toggle.addEventListener("click", ()=>{
+      const open = navEl.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(open));
+      if (open && !REDUCED) gsap.from(".nav__mobile .nav__link", {autoAlpha:0, y:-10, duration:0.3, ease:"power1.inOut", stagger:0.04});
+    });
+    navEl.querySelectorAll(".nav__mobile a").forEach(a=>a.addEventListener("click", ()=>{
+      navEl.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded","false");
+    }));
+  }
+
+  /* ---------- form (posts to the AEVA contacts endpoint) ---------- */
+  const FORM_ENDPOINT = "https://api.aevadigital.com/api/v1/contacts/add_contact_from_form/";
+  const FORM_ORGANIZATION = "0a165aaa-3f2a-4b68-b475-66cf5c67cc8a";
+  const FORM_ID = "552";
+
+  const form = document.getElementById("booking-form");
+  const status = document.getElementById("form-status");
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  function setStatus(msg, isError){
+    status.textContent = msg || "";
+    status.classList.toggle("is-visible", !!msg);
+    status.classList.toggle("is-error", !!msg && !!isError);
+    if (msg && !REDUCED) gsap.fromTo(status, {autoAlpha:0, y:8}, {autoAlpha:1, y:0, duration:0.3, ease:"power3.out"});
+  }
+
+  /* gclid / fbclid / ttclid etc, whichever landed on the URL first */
+  function adTracking(){
+    const params = new URLSearchParams(window.location.search);
+    const map = {gclid:"google", wbraid:"google", gbraid:"google", fbclid:"meta", ttclid:"tiktok"};
+    for (const [param, source] of Object.entries(map)){
+      const val = params.get(param);
+      if (val) return {tracking_param: val, ad_source: source};
+    }
+    return {tracking_param: "", ad_source: "other"};
+  }
+
+  form.addEventListener("submit", async e=>{
+    e.preventDefault();
+    setStatus("");
+
+    const val = id => (document.getElementById(id).value || "").trim();
+    const first_name = val("f-first");
+    const last_name  = val("f-last");
+    const email      = val("f-email");
+    const phoneRaw   = val("f-phone");
+    const message    = val("f-msg");
+
+    const missing = [...form.querySelectorAll("[required]")].filter(f=>!f.value.trim());
+    if (missing.length){
+      setStatus("Please add your name, phone number and email so the clinic can call you back.", true);
+      missing[0].focus();
+      if(!REDUCED) gsap.fromTo(missing[0], {x:-4}, {x:0, duration:0.3, ease:"power2.out"});
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)){
+      setStatus("Please enter a valid email address.", true);
+      document.getElementById("f-email").focus();
+      return;
+    }
+
+    /* accept (270) 000-0000, 270-000-0000, 2700000000 — all become +12700000000 */
+    const digits = phoneRaw.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
+    if (!/^[0-9]{10}$/.test(digits)){
+      setStatus("Please enter a 10-digit US phone number.", true);
+      document.getElementById("f-phone").focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+
+    const fd = new FormData();
+    fd.append("first_name", first_name);
+    fd.append("last_name", last_name);
+    fd.append("phone", `+1${digits}`);
+    fd.append("email", email);
+    fd.append("message", message);
+    fd.append("checkbox", "on");
+    fd.append("organization", FORM_ORGANIZATION);
+    fd.append("form", FORM_ID);
+    fd.append("form_location", window.location.href);
+    const track = adTracking();
+    fd.append("tracking_param", track.tracking_param);
+    fd.append("ad_source", track.ad_source);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {method:"POST", body:fd});
+      if (!res.ok){
+        const txt = await res.text().catch(()=>res.statusText);
+        throw new Error(txt || "Server error");
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event:"form-success"});
+
+      const thankYou = document.createElement("div");
+      thankYou.className = "form form--success";
+      thankYou.setAttribute("role","status");
+      thankYou.innerHTML = '<h2 class="form__title">Thank you.</h2>' +
+        '<p class="form__sub">Your booking request has been received. The clinic will call you back with two or three times that work.</p>';
+      form.parentNode.insertBefore(thankYou, form.nextSibling);
+      form.style.display = "none";
+      if(!REDUCED) gsap.fromTo(thankYou, {autoAlpha:0, y:12}, {autoAlpha:1, y:0, duration:0.45, ease:"power3.out"});
+    } catch (err){
+      console.error(err);
+      setStatus("Submission failed \u2014 please try again.", true);
+      submitBtn.disabled = false;
+    }
+  });
+
+  /* ---------- prefill from "Choose" buttons ---------- */
+  document.querySelectorAll("[data-pick]").forEach(el=>{
+    el.addEventListener("click", ()=>{
+      const msg = document.getElementById("f-msg");
+      const pick = el.getAttribute("data-pick").replace(/&amp;/g,"&");
+      if (msg) msg.value = `I would like to book: ${pick}.`;
+    });
+  });
+
+  /* ============================================================
+     TAP LAYER — on tablet and phone, every hover affordance becomes a
+     tap affordance. Controls flash their hover look while pressed; the
+     image zooms toggle, so a tap holds the effect long enough to read.
+     Runs before the reduced-motion return so touch users always get it.
+     ============================================================ */
+  const CAN_HOVER = matchMedia("(hover:hover) and (pointer:fine)").matches;
+
+  (function tapLayer(){
+    if (CAN_HOVER) return;
+
+    const PRESS = ".nav__link,.nav__phone,.nav__cta,.qopt,.qback,.ctable__btn," +
+                  "a.info__value,.faq__q,.footer__cta,a.footer__link,.footer__social," +
+                  ".footer__logo,.rating-chip,.rating-badge";
+    document.querySelectorAll(PRESS).forEach(el=>{
+      let t;
+      const on  = ()=>{ clearTimeout(t); el.classList.add("is-tapped"); };
+      const off = ()=>{ clearTimeout(t); t = setTimeout(()=>el.classList.remove("is-tapped"), 260); };
+      el.addEventListener("pointerdown",   on,  {passive:true});
+      el.addEventListener("pointerup",     off, {passive:true});
+      el.addEventListener("pointercancel", off, {passive:true});
+      el.addEventListener("pointerleave",  off, {passive:true});
+    });
+
+    /* image zooms: tap to hold, tap again or tap another to release */
+    const ZOOM = [...document.querySelectorAll(".tile,.tstep__img")];
+    ZOOM.forEach(el=>{
+      el.addEventListener("click", ()=>{
+        const was = el.classList.contains("is-tapped");
+        ZOOM.forEach(o=>o.classList.remove("is-tapped"));
+        if (!was) el.classList.add("is-tapped");
+      });
+    });
+  })();
+
+  /* ---------- reduced motion: stamp final states and stop ---------- */
+  if (REDUCED){
+    gsap.set("[data-hero-media],[data-hero-overlay],[data-hero-bottom]", {clearProps:"all", opacity:1, y:0, scale:1});
+    document.querySelectorAll("[data-hero-nav]").forEach(n=>n.style.translate="0 0");
+    gsap.set("[data-hero-title],[data-hero-info]", {clearProps:"transform"});
+    document.querySelectorAll("[data-animate]").forEach(e=>e.classList.add("is-animated"));
+    document.querySelectorAll("[data-card-item]").forEach(e=>e.classList.add("card-visible"));
+    document.querySelectorAll("[data-about-title],[data-about-grid-item]").forEach(e=>{e.style.opacity=1;e.style.transform="none";});
+    return;
+  }
+
+  /* ---------- Lenis smooth scroll (non-touch only) ---------- */
+  let lenis = null;
+  if (!IS_TOUCH && window.Lenis){
+    lenis = new Lenis({
+      duration:1.2,
+      easing:t=>Math.min(1, 1.001 - Math.pow(2, -10*t)),
+      orientation:"vertical", gestureOrientation:"vertical",
+      smoothWheel:true, touchMultiplier:2, infinite:false
+    });
+    lenis.on("scroll", ScrollTrigger.update);
+    gsap.ticker.add(t=>lenis.raf(t*1000));
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener("click", e=>{
+        const id = a.getAttribute("href");
+        if (id.length < 2) return;
+        const t = document.querySelector(id);
+        if (!t) return;
+        e.preventDefault();
+        lenis.scrollTo(t, {offset:-24});
+      });
+    });
+  }
+
+  /* ---------- A0b · scroll-linked parallax-zoom (team image) ----------
+     Oversized image inside a clipping frame, scrubbed frame-by-frame:
+     scales down toward rest and drifts vertically as it crosses the
+     viewport. Shares the page's Lenis scroll value so it never desyncs.
+     Only `transform` is written, so it stays GPU-composited — which is why
+     this now runs on touch as well, at a gentler scale and drift so the
+     shallow mobile band never crops far enough to cut a face.
+     -------------------------------------------------------------------- */
+  (function parallaxZoom(){
+    const mqSmall = matchMedia("(max-width: 1199px)");
+    let SCALE_FROM, SCALE_TO, DRIFT;
+    const readScale = ()=>{
+      const s = mqSmall.matches;
+      SCALE_FROM = s ? 1.18 : 1.35;
+      SCALE_TO   = s ? 1.04 : 1.12;
+      DRIFT      = s ? 0.03 : 0.05;
+    };
+    readScale();
+    const clamp = (v,lo,hi)=>Math.min(hi,Math.max(lo,v));
+    const lerp  = (a,b,t)=>a+(b-a)*t;
+
+    const pairs = [...document.querySelectorAll(".px-holder")]
+      .map(holder=>{ const img = holder.querySelector(".fill-image"); return img ? {holder,img} : null; })
+      .filter(Boolean);
+    if (!pairs.length) return;
+
+    let needsUpdate = true;
+    const invalidate = ()=>{ needsUpdate = true; };
+
+    function apply(pair, vh){
+      const rect = pair.holder.getBoundingClientRect();
+      if (rect.bottom < -vh || rect.top > vh * 2) return;
+      const p = clamp((vh - rect.top) / (vh + rect.height), 0, 1);
+      const scale = lerp(SCALE_FROM, SCALE_TO, p);
+      const y = (p - 0.5) * 2 * DRIFT * rect.height;
+      pair.img.style.transform =
+        `translate3d(0, ${y.toFixed(2)}px, 0) scale3d(${scale.toFixed(4)}, ${scale.toFixed(4)}, 1)`;
+    }
+
+    gsap.ticker.add(()=>{
+      if (!needsUpdate) return;
+      const vh = window.innerHeight;
+      for (const pair of pairs) apply(pair, vh);
+      needsUpdate = false;
+    });
+
+    if (lenis && typeof lenis.on === "function") lenis.on("scroll", invalidate);
+    else window.addEventListener("scroll", invalidate, {passive:true});
+    /* rotating a phone flips which scale range applies */
+    const onResize = ()=>{ readScale(); invalidate(); };
+    window.addEventListener("resize", onResize, {passive:true});
+    window.addEventListener("orientationchange", onResize, {passive:true});
+    invalidate();
+  })();
+
+  /* ---------- A1 · hero intro timeline ---------- */
+  (function heroIntro(){
+    const hero = document.querySelector("[data-hero-animate]");
+    if (!hero) return;
+    const nav      = document.querySelector("[data-hero-nav]");
+    const media    = hero.querySelector("[data-hero-media]");
+    const overlay  = hero.querySelector("[data-hero-overlay]");
+    const title    = hero.querySelector("[data-hero-title]");
+    const info     = hero.querySelectorAll("[data-hero-info]");
+    const bottom   = hero.querySelector("[data-hero-bottom]");
+    const E = "power3.out";
+    const tl = gsap.timeline({ delay:0.1, onComplete:()=>hero.classList.add("hero-loaded") });
+    if (media)       tl.to(media,   {opacity:1, scale:1, duration:1.0, ease:E}, 0);
+    if (overlay)     tl.to(overlay, {opacity:1, duration:0.8, ease:E}, 0.1);
+    if (nav)         tl.to(nav,     {translate:"0 0", duration:0.6, ease:"power2.out"}, 0.15);
+    if (title)       tl.to(title,   {y:0, duration:0.8, ease:E}, 0.45);
+    if (info.length) tl.to(info,    {y:0, duration:0.6, ease:E, stagger:0.08}, 0.75);
+    if (bottom)      tl.to(bottom,  {opacity:1, y:0, duration:0.6, ease:E}, 0.75);
+  })();
+
+  /* ---------- A2 · attribute reveals ---------- */
+  function attributeReveals(){
+    document.querySelectorAll("[data-animate]:not(.is-animated)").forEach(el=>{
+      const type     = el.getAttribute("data-animate");
+      const delay    = parseFloat(el.getAttribute("data-delay") || "0");
+      const duration = parseFloat(el.getAttribute("data-duration") || (LOW_POWER ? "0.4" : "0.6"));
+      const stagger  = parseFloat(el.getAttribute("data-stagger") || (LOW_POWER ? "0.08" : "0.1"));
+      const base = { opacity:1, duration, delay, ease:"power3.out", clearProps:"transform",
+                     onComplete:()=>el.classList.add("is-animated") };
+      const MAP = {
+        "fade-up":{...base, y:0}, "fade-down":{...base, y:0}, "fade-in":{...base},
+        "slide-left":{...base, x:0}, "slide-right":{...base, x:0},
+        "scale-up":{...base, scale:1}, "scale-down":{...base, scale:1},
+        "stagger":{ opacity:1, y:0, duration, stagger, ease:"power3.out",
+                    onComplete:()=>el.classList.add("is-animated") }
+      };
+      const vars    = MAP[type] || base;
+      const targets = type === "stagger" ? el.children : el;
+      ScrollTrigger.create({
+        trigger:el, start: IS_MOBILE ? "top 90%" : "top 85%",
+        once:true, fastScrollEnd:true,
+        onEnter:()=>gsap.to(targets, vars)
+      });
+    });
+  }
+
+  /* ---------- A3 · clip-mask tag + title reveal (signature) ---------- */
+  function clipReveals(){
+    const bySection = new Map();
+    document.querySelectorAll("[data-clip-wrap]").forEach(wrap=>{
+      const section = wrap.closest("section, header");
+      if (!section) return;
+      if (!bySection.has(section)) bySection.set(section, []);
+      bySection.get(section).push(wrap);
+    });
+    bySection.forEach((wraps, section)=>{
+      const tags = [], titles = [];
+      wraps.forEach(wrap=>{
+        const child = wrap.firstElementChild;
+        if (!child || child.classList.contains("clip-revealed")) return;
+        if (wrap.getAttribute("data-clip-wrap") === "tag") tags.push(child);
+        else titles.push(child);
+      });
+      if (!tags.length && !titles.length) return;
+      tags.forEach(el=>gsap.set(el, {y:60}));
+      titles.forEach(el=>gsap.set(el, {yPercent:110}));
+      ScrollTrigger.create({
+        trigger:section, start: IS_MOBILE ? "top 85%" : "top 75%",
+        once:true, fastScrollEnd:true,
+        onEnter:()=>{
+          const tl = gsap.timeline();
+          tags.forEach(el=>tl.to(el, {y:0, duration:0.65, ease:"power3.out",
+            onComplete:()=>el.classList.add("clip-revealed")}, 0));
+          titles.forEach(el=>tl.to(el, {yPercent:0, duration:0.68, ease:"power3.out",
+            onComplete:()=>el.classList.add("clip-revealed")}, tags.length ? 0.15 : 0));
+        }
+      });
+    });
+  }
+
+  /* ---------- A5 · card stagger (GSAP schedules, CSS transitions) ---------- */
+  function cardStagger(){
+    document.querySelectorAll("[data-card-stagger]").forEach(grid=>{
+      let items = grid.querySelectorAll("[data-card-item]");
+      if (!items.length) items = grid.children;
+      if (!items.length || items[0].classList.contains("card-visible")) return;
+      const stepS = parseFloat(grid.getAttribute("data-card-stagger") || "0.1");
+      ScrollTrigger.create({
+        trigger:grid, start: IS_MOBILE ? "top 85%" : "top 80%",
+        once:true, fastScrollEnd:true,
+        onEnter:()=>[...items].forEach((item,i)=>setTimeout(()=>item.classList.add("card-visible"), i*stepS*1000))
+      });
+    });
+  }
+
+  /* ---------- A6 · about section reveal ---------- */
+  function aboutReveal(){
+    document.querySelectorAll("[data-about-scroll-animate]").forEach(section=>{
+      const title = section.querySelector("[data-about-title]");
+      const items = section.querySelectorAll("[data-about-grid-item]");
+      if (!title || title.classList.contains("is-revealed")) return;
+      if (IS_MOBILE){
+        title.classList.add("is-revealed");
+        items.forEach(i=>i.classList.add("is-revealed"));
+        return;
+      }
+      gsap.set(title, {opacity:0, y:30});
+      gsap.set(items, {opacity:0, y:40});
+      ScrollTrigger.create({
+        trigger:section, start:"top 75%", once:true,
+        onEnter:()=>{
+          gsap.to(title, {opacity:1, y:0, duration:0.8, delay:0.2, ease:"power3.out",
+            onComplete:()=>title.classList.add("is-revealed")});
+          gsap.to(items, {opacity:1, y:0, duration:0.6, stagger:0.15, delay:0.5, ease:"power2.out"});
+        }
+      });
+    });
+  }
+
+  /* ---------- A7 · parallax (desktop only, the only scrubbed effect) ---------- */
+  function parallax(){
+    if (IS_MOBILE) return;
+    document.querySelectorAll("[data-parallax]").forEach(el=>{
+      const depth = parseFloat(el.getAttribute("data-parallax") || "0.5");
+      gsap.to(el, {
+        y:()=>depth * 100, ease:"none",
+        scrollTrigger:{ trigger: el.closest("section") || el, start:"top bottom", end:"bottom top", scrub:1 }
+      });
+    });
+  }
+
+  /* ---------- A8 · button hover + press ---------- */
+  function buttons(){
+    const HOVERS = [
+      ['.btn--dark', {y:-2, backgroundColor:"#2A2219", borderColor:"#2A2219", boxShadow:"0 8px 24px rgba(0,0,0,0.12)"}],
+      ['[data-btn-hero-primary]', {y:-2, backgroundColor:"#FFFFFF", borderColor:"#FFFFFF", boxShadow:"0 8px 24px rgba(0,0,0,0.12)"}],
+      ['.btn--white:not([data-btn-hero-primary])', {y:-2, backgroundColor:"#E3D9CE", boxShadow:"0 8px 24px rgba(0,0,0,0.12)"}],
+      ['[data-btn-outline-light]', {y:-2, backgroundColor:"rgba(255,255,255,0.12)", borderColor:"#FFFFFF"}],
+      ['.btn--outline-dark', {backgroundColor:"#392E26", color:"#FFFFFF", borderColor:"#392E26"}]
+    ];
+    const seen = new WeakSet();
+    HOVERS.forEach(([sel, vars])=>{
+      document.querySelectorAll(sel).forEach(el=>{
+        if (seen.has(el)) return;
+        seen.add(el);
+        const hov = gsap.to(el, {...vars, duration:0.3, ease:"power1.inOut", paused:true});
+        if (CAN_HOVER){
+          el.addEventListener("mouseenter", ()=>hov.play());
+          el.addEventListener("mouseleave", ()=>hov.reverse());
+        } else {
+          /* touch: the hover state plays on press and settles after release */
+          let t;
+          const settle = ()=>{ clearTimeout(t); t = setTimeout(()=>hov.reverse(), 260); };
+          el.addEventListener("pointerdown",   ()=>{ clearTimeout(t); hov.play(); });
+          el.addEventListener("pointerup",     settle);
+          el.addEventListener("pointercancel", settle);
+          el.addEventListener("pointerleave",  settle);
+        }
+        const press = gsap.to(el, {scale:0.98, duration:0.1, ease:"power2.out", paused:true});
+        el.addEventListener("pointerdown", ()=>press.play());
+        el.addEventListener("pointerup",   ()=>press.reverse());
+        el.addEventListener("pointerleave",()=>press.reverse());
+      });
+    });
+  }
+
+  /* ---------- A9 · card lift: hover on desktop, tap on touch ---------- */
+  function cards(){
+    const all = [...document.querySelectorAll("[data-card-hover]")];
+    const lift = new Map();
+    all.forEach(c=>{
+      const dark = c.classList.contains("tier--feature");
+      const tl = gsap.timeline({paused:true}).to(c, {
+        y:-4,
+        boxShadow:"0 20px 40px rgba(0,0,0,0.16)",
+        borderColor: dark ? "#392E26" : "#392E26",
+        duration:0.3, ease:"power1.inOut"
+      }, 0);
+      if (CAN_HOVER){
+        c.addEventListener("mouseenter", ()=>tl.play());
+        c.addEventListener("mouseleave", ()=>tl.reverse());
+        return;
+      }
+      /* touch: tap lifts the card, tapping it again or another card drops it.
+         Taps that land on a link or button inside the card are left alone. */
+      lift.set(c, {tl, up:false});
+      c.addEventListener("click", e=>{
+        if (e.target.closest("a,button")) return;
+        const self = lift.get(c);
+        all.forEach(o=>{
+          const s = lift.get(o);
+          if (s && o !== c && s.up){ s.up = false; s.tl.reverse(); }
+        });
+        self.up = !self.up;
+        self.up ? self.tl.play() : self.tl.reverse();
+      });
+    });
+  }
+
+  function initAll(){
+    attributeReveals();
+    clipReveals();
+    cardStagger();
+    aboutReveal();
+    parallax();
+    buttons();
+    cards();
+  }
+
+  initAll();
+  window.addEventListener("load", ()=>ScrollTrigger.refresh());
+
+  let rt;
+  window.addEventListener("resize", ()=>{
+    clearTimeout(rt);
+    rt = setTimeout(()=>{ ScrollTrigger.refresh(); lenis && lenis.start(); }, 200);
+  });
+  window.addEventListener("pagehide", e=>{
+    if (!e.persisted){ lenis && lenis.destroy(); ScrollTrigger.getAll().forEach(t=>t.kill()); }
+  });
+})();
+</script>
+</body>
+</html>
